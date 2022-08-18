@@ -1,10 +1,16 @@
 import './css/page.css';
+import Footer from './Footer';
+import Menu from './Menu';
 
 function App() {
 	return (
 		<div className='wrapper'>
 			<div className='page'>
-				REPlay
+				<Menu />
+				<main className='main containerM'>
+					content
+				</main>
+				<Footer />
 			</div>
 		</div>
 	);
