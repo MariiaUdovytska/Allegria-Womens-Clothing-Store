@@ -4,16 +4,6 @@
 	left: 0;
 	top: 0;
 	z-index: 50;
-/* 
-	min-height: 60px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	text-transform: uppercase;
-	font-size: 1.14rem;
-	letter-spacing: 0.2rem; */
-
 }
 .menu::before{
 	content: "";
@@ -40,11 +30,13 @@
 .menu__logo,
 .menu__navigate,
 .menu__lang,
-.menu__icons {
+.menu__icons,
+.menu__burger,
+.menu__phone-right{
 	z-index: 3;
 }
 .menu__logo img{
-	margin-right: 7px;
+	margin-right: 6px;
 }
 .menu__logo img:last-child{
 	margin-right: 0px;
@@ -56,17 +48,17 @@
 .menu__burger{
 	display: flex;
 	align-items: center;
-
 }
 .menu__navigate ul{
 	display: flex;
 	flex-direction: row;
 	margin: 0px -40px;
+	padding-left: 0px;
 }
 .menu__navigate ul li{
 	padding: 0px 40px;
 	cursor: pointer;
-	padding: 25px 20px 0px ;
+	padding: 23px 20px 0px ;
 }
 .menu__navigate ul li:nth-child(even){
 	color: #B7C1C5;
@@ -78,23 +70,33 @@
 	margin-top: 15px;
 	background-color: #fff;
 }
-.menu__navigate-search {
+.menu__navigate-search,
+.menu__navigate-search-table,
+.menu__navigate-search-phone {
 	height: 100%;
 	display: flex;
 	align-items: center;
 }
-.menu__navigate-search input{
+.menu__navigate-search input,
+.menu__navigate-search-table input,
+.menu__navigate-search-phone input{
 	border-bottom: 1px solid #0F303F;
 	margin-left: 10px;
 }
-
+.menu__navigate-search-table input,
+.menu__navigate-search-phone input{
+	width: 100%;
+}
+.menu__navigate-search-phone {
+	margin-right: 10px;
+}
 .menu__lang ul{
 	display: flex;
 	flex-direction: row;
 	margin:  0px -20px;
 }
 .menu__lang ul li{
-	padding: 25px 20px 0px ;
+	padding: 23px 20px 0px ;
 	cursor: pointer;
 }
 .menu__lang ul li:hover,
@@ -112,8 +114,6 @@
 	background-color: #E64926;
 }
 
-
-
 .menu__icons{
 	margin: 0px -15px;
 	cursor: pointer;
@@ -123,38 +123,71 @@
 .menu__icons  .bi-bag{
 	padding: 0px 15px;
 }
-.menu__burger{
-	display: none;
+
+.menu__phone-right{
+	display: flex;
+	flex-direction: row;
 }
-.munu__detailed{
+.menu__lang-phone-ul{
+	padding-left: 0px;
+}
+.menu__burger{
+	cursor: pointer;
+}
+
+.menu__detailed{
 	position: fixed;
 	top: -100%;
 	left: 0;
 	width: 100%;
 	height: 80%;
 	transition: all 0.3s ease 0s;
-	background-color: #fff;
-	padding: 115px 145px 10px;
+	background-color: rgb(220, 132, 132);
+	padding-top: 115px;
+	padding-bottom: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
 	overflow: auto;
 }
-.munu__detailed-active{
+.menu__detailed-active{
 	top: 0;
+}
+.menu__detailed::-webkit-scrollbar {
+	width: 5px;
+}
+.menu__detailed::-webkit-scrollbar-track {
+	background-color: transparent;
+	margin: 5px;
+
+}
+.menu__detailed::-webkit-scrollbar-thumb {
+	background-color: #e649266f;
+	border-radius: 20px;
+}
+
+.menu__detailed-table{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 120px;
 }
 
 
 @media (max-width:1100px) {
 	.menu__navigate ul{
-		margin: 0px -20px;
+		margin: 0px -10px;
 	}
 	.menu__navigate ul li{
-		padding: 0px 20px;
-
+		padding: 23px 10px 0px;
+	}
+	.menu__navigate-search input{
+		max-width: 115px;
 	}
 	.menu__lang ul{
-		margin: 0px-10px;
+		margin: 0px -7px;
 	}
 	.menu__lang ul li{
-		padding: 25px 10px 0px;
+		padding: 23px 7px 0px;
 	}
 	.menu__icons{
 		margin: 0px -7px;
@@ -164,5 +197,58 @@
 	.menu__icons  .bi-bag{
 		padding: 0px 7px;
 	}
-	
+}
+@media (max-width:898px){
+	.menu__logo img{
+		margin-right: 4px;
+	}
+	.menu__navigate ul{
+		margin: 0px -5px;
+	}
+	.menu__navigate ul li{
+		padding: 23px 5px 0px;
+	}
+	.menu__navigate-search input{
+		max-width: 85px;
+	}
+	.menu__lang ul{
+		margin: 0px -3px;
+	}
+	.menu__lang ul li{
+		padding: 23px 3px 0px;
+	}
+	.menu__icons{
+		margin: 0px -3px;
+	}
+	.menu__icons .bi-person,
+	.menu__icons .bi-heart,
+	.menu__icons  .bi-bag{
+		padding: 0px 3px;
+	}
+	.menu__detailed{
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+@media (max-width:768px){
+	.menu__icons{
+		margin: 0px -7px;
+	}
+	.menu__icons .bi-person,
+	.menu__icons .bi-heart,
+	.menu__icons  .bi-bag{
+		padding: 0px 7px;
+	}
+	.menu__burger .bi-x-lg,
+	.menu__burger .bi-filter-right{
+		padding-left: 27px;
+	}
+}
+@media (max-width:590px){
+	.menu__detailed-table{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 56px;
+		align-items: center;
+	}
 }

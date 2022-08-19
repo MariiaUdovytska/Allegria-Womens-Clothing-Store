@@ -1,9 +1,24 @@
 .menu-detailed{
 	width: 100%;
 	display: flex;
+	flex-direction: column;
+}
+
+.menu-detailed__phone{
+	flex-direction: column;
+}
+.menu-detailed__tablet{
+	align-items: center;
+}
+.menu-detailed__choise{
+	width: 100%;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+.menu-detailed__info{}
+
+
 
 .menu-detailed__clothes .accordion-button,
 .menu-detailed__shoes .accordion-button,
@@ -14,7 +29,7 @@
 	font-weight: 600;
 	justify-content: center;
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 600;
 	color: #0F303F;
 	margin: 0px auto;
 }
