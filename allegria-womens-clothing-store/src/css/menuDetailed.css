@@ -1,8 +1,12 @@
 .menu-detailed{
 	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
+/* .menu-detailed__tablet{
+	height: 100%;
+} */
 
 .menu-detailed__phone{
 	flex-direction: column;
@@ -16,7 +20,22 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
-.menu-detailed__info{}
+.menu-detailed__phone,
+.menu-detailed__choise{
+	flex: 1 1 auto;
+}
+.menu-detailed__info{
+	color: #254A5A;
+	font-size: 0.85rem;
+	font-weight: 400;
+	margin: 0px auto 14px;
+}
+.menu-detailed__info ul{
+	margin: 0px -40px;
+}
+.menu-detailed__info ul span{
+	padding: 0px 40px;
+}
 
 
 
@@ -85,3 +104,20 @@
 .menu-detailed__bags ,
 .menu-detailed__accessories ,
 .menu-detailed__underwear {}
+
+@media (max-width:953px) {
+	.menu-detailed__info ul{
+		margin: 0px -20px;
+	}
+	.menu-detailed__info ul span{
+		padding: 0px 20px;
+	}
+}
+@media (max-width:768px) {
+	.menu-detailed__info{
+		display: none;
+	}
+	.menu-detailed__tablet{
+		flex: 1 1 auto;
+	}
+} 

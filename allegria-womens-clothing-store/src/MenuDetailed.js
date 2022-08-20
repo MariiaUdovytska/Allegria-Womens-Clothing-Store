@@ -97,10 +97,12 @@ class MenuDetailed extends React.Component {
 					</div>
 				</div>
 				<div className='menu-detailed__info'>
-					<span>DEHA</span>
-					<span>American vintage</span>
-					<span>george gina lucy</span>
-					<span>george gina lucy</span>
+					<ul>
+						<span>DEHA</span>
+						<span>American&nbsp;vintage</span>
+						<span>george&nbsp;gina&nbsp;lucy</span>
+						<span>birkenstock</span>
+					</ul>
 				</div>
 			</div>
 		)

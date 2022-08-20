@@ -140,6 +140,14 @@ class Menu extends React.Component {
 									</div>
 								</div>
 								<MenuDetailed openAccordion={false} />
+								<div className='menu-detailed__tablet-info'>
+									<ul>
+										<span>DEHA</span>
+										<span>American&nbsp;vintage</span>
+										<span>george&nbsp;gina&nbsp;lucy</span>
+										<span>birkenstock</span>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -181,22 +189,32 @@ class Menu extends React.Component {
 												Женщины
 											</li>
 											<li>Мужчины</li>
-
 										</ul>
 									</nav>
 								</div>
 								<MenuDetailed openAccordion={false} />
-								<div className='menu__lang'>
-									<ul className='menu__lang-phone-ul'>
-										<li className='menu__navigate-search-phone'>
-											поиск
-											<input type='text'></input>
-										</li>
-										<li className='menu__lang-active'>ru</li>
-										<li>ua</li>
-										<li>en</li>
-									</ul>
+								<div className='menu__langandinfo'>
+									<div className='menu__lang'>
+										<ul className='menu__lang-phone-ul'>
+											<li className='menu__navigate-search-phone'>
+												поиск
+												<input type='text'></input>
+											</li>
+											<li className='menu__lang-active'>ru</li>
+											<li>ua</li>
+											<li>en</li>
+										</ul>
+									</div>
+									<div className='menu-detailed__phone-info'>
+										<ul>
+											<span>DEHA</span>
+											<span>American&nbsp;vintage</span>
+											<span>george&nbsp;gina&nbsp;lucy</span>
+											<span>birkenstock</span>
+										</ul>
+									</div>
 								</div>
+
 							</div>
 						</div>
 					</div>
