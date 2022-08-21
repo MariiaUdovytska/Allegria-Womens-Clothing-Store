@@ -1,11 +1,34 @@
 import React from 'react';
 import './css/footer.css';
+import { Form } from 'react-bootstrap';
 
 function Footer() {
 	return (
-		<div className='footer containerM'>
-			tesst Footer
-		</div>
+		<section className='footer'>
+			<div className='footer__body'>
+				<div className='footer__body-up containerM'>
+					<h2>Будьте в курсе событий</h2>
+					<Form>
+						<Form.Group className="mb-3" controlId="formBasicEmail">
+							<Form.Control type="email" placeholder="E-mail" />
+						</Form.Group>
+					</Form>
+					<nav className='footer__body-navigation'>
+						<ul>
+							<li>О&nbsp;нас</li>
+							<li>Распространенные вопросы</li>
+							<li>Бренды</li>
+						</ul>
+					</nav>
+				</div>
+				<div className='footer__body-subfooter'>
+					<div className='footer__body-subfooter-imfo containerM'>
+						<span>Все права защищены  © 2020 Allegria.com</span>
+						<span>Дизайн и разработка:</span>
+					</div>
+				</div>
+			</div>
+		</section>
 	);
 }
 
