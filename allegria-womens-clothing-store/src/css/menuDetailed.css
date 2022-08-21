@@ -4,10 +4,6 @@
 	display: flex;
 	flex-direction: column;
 }
-/* .menu-detailed__tablet{
-	height: 100%;
-} */
-
 .menu-detailed__phone{
 	flex-direction: column;
 }
@@ -37,13 +33,7 @@
 	padding: 0px 40px;
 }
 
-
-
-.menu-detailed__clothes .accordion-button,
-.menu-detailed__shoes .accordion-button,
-.menu-detailed__bags .accordion-button,
-.menu-detailed__accessories .accordion-button,
-.menu-detailed__underwear .accordion-button{
+.menu-detailed__accordion .accordion-button{
 	background-color: unset;
 	font-weight: 600;
 	justify-content: center;
@@ -61,30 +51,20 @@
 	box-shadow: none;
 }
 
-.menu-detailed__clothes .accordion-button:not(.collapsed),
-.menu-detailed__shoes .accordion-button:not(.collapsed),
-.menu-detailed__bags .accordion-button:not(.collapsed),
-.menu-detailed__accessories .accordion-button:not(.collapsed),
-.menu-detailed__underwear .accordion-button:not(.collapsed){
+.menu-detailed__accordion .accordion-button:not(.collapsed){
 	background-color: #fff;
 }
 
-.menu-detailed__clothes .accordion-button::after,
-.menu-detailed__shoes .accordion-button::after,
-.menu-detailed__bags .accordion-button::after,
-.menu-detailed__accessories .accordion-button::after,
-.menu-detailed__underwear .accordion-button::after {
-	margin-left: 11px;
-	margin-right: 11px;
+.menu-detailed__accordion .accordion-button:not(.collapsed)::after{
+	filter: invert(62%) sepia(32%) saturate(2076%) hue-rotate(334deg) brightness(86%) contrast(111%);
 }
 
+.menu-detailed__accordion .accordion-button::after{
+	margin-left: 11px;
+	margin-right: 0px;
+}
 
-
-.menu-detailed__clothes .accordion-body ul,
-.menu-detailed__shoes .accordion-body ul,
-.menu-detailed__bags .accordion-body ul,
-.menu-detailed__accessories .accordion-body ul,
-.menu-detailed__underwear .accordion-body ul{
+.menu-detailed__accordion .accordion-body ul{
 	margin-bottom: 0px;
 	padding-left: 0px;
 	font-size: 1rem;
@@ -93,17 +73,24 @@
 	color: #0F303F;
 }
 
+.menu-detailed__accordion .accordion-body ul li:hover{
+	cursor: pointer;
+	color: #E64926;
+}
+.menu-detailed__accordion .accordion-body ul li:hover::before{
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	background-color: #E64926;
+	margin-right: 5px;
+	margin-bottom: 2px;
+	border-radius: 50%;
+}
+
 .accordion-item{
 	border: none;
 }
-
-.accordion-button:not(.collapsed)::after{}
-
-.menu-detailed__clothes ,
-.menu-detailed__shoes ,
-.menu-detailed__bags ,
-.menu-detailed__accessories ,
-.menu-detailed__underwear {}
 
 @media (max-width:953px) {
 	.menu-detailed__info ul{
@@ -119,5 +106,9 @@
 	}
 	.menu-detailed__tablet{
 		flex: 1 1 auto;
+	}
+	.menu-detailed__accordion .accordion-button::after{
+		margin-left: 7px;
+		margin-right: 0px;
 	}
 } 

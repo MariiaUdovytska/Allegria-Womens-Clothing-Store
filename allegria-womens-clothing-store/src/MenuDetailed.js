@@ -13,7 +13,7 @@ class MenuDetailed extends React.Component {
 		return (
 			<div className={((this.props.openAccordion === true) ? 'menu-detailed' : 'menu-detailed__tablet')}>
 				<div className={((this.props.openAccordion === true) ? 'menu-detailed__choise' : ' menu-detailed__phone')}>
-					<div className='menu-detailed__clothes'>
+					<div className='menu-detailed__accordion'>
 						<Accordion defaultActiveKey={(this.props.openAccordion === true) ? '0' : ''}>
 							<Accordion.Item eventKey="0">
 								<Accordion.Header>ОДЕЖДА</Accordion.Header>
@@ -36,7 +36,7 @@ class MenuDetailed extends React.Component {
 							</Accordion.Item>
 						</Accordion>
 					</div>
-					<div className='menu-detailed__shoes'>
+					<div className='menu-detailed__accordion'>
 						<Accordion defaultActiveKey={(this.props.openAccordion === true) ? '0' : ''}>
 							<Accordion.Item eventKey="0">
 								<Accordion.Header>ОБУВЬ</Accordion.Header>
@@ -49,7 +49,7 @@ class MenuDetailed extends React.Component {
 							</Accordion.Item>
 						</Accordion>
 					</div>
-					<div className='menu-detailed__bags'>
+					<div className='menu-detailed__accordion'>
 						<Accordion defaultActiveKey={(this.props.openAccordion === true) ? '0' : ''}>
 							<Accordion.Item eventKey="0">
 								<Accordion.Header>СУМКИ</Accordion.Header>
@@ -66,7 +66,7 @@ class MenuDetailed extends React.Component {
 							</Accordion.Item>
 						</Accordion>
 					</div>
-					<div className='menu-detailed__accessories'>
+					<div className='menu-detailed__accordion'>
 						<Accordion defaultActiveKey={(this.props.openAccordion === true) ? '0' : ''}>
 							<Accordion.Item eventKey="0">
 								<Accordion.Header>АКСЕСУАРИ</Accordion.Header>
@@ -83,7 +83,7 @@ class MenuDetailed extends React.Component {
 							</Accordion.Item>
 						</Accordion>
 					</div>
-					<div className='menu-detailed__underwear'>
+					<div className='menu-detailed__accordion'>
 						<Accordion defaultActiveKey={(this.props.openAccordion === true) ? '0' : ''}>
 							<Accordion.Item eventKey="0">
 								<Accordion.Header>БЕЛЬЕ</Accordion.Header>
