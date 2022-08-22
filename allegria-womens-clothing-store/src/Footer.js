@@ -4,7 +4,7 @@ import { Form } from 'react-bootstrap';
 
 function Footer() {
 	return (
-		<section className='footer'>
+		<footer className='footer'>
 			<div className='footer__body'>
 				<div className='footer__body-up containerM'>
 					<h2>Будьте в курсе событий</h2>
@@ -28,7 +28,7 @@ function Footer() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</footer>
 	);
 }
 

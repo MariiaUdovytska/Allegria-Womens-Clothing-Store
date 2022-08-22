@@ -10,6 +10,7 @@ function App() {
 				<Menu />
 				<main className='main containerM'>
 					content
+
 				</main>
 				<Footer />
 			</div>
