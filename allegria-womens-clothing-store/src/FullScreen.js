@@ -31,7 +31,7 @@ function FullScreen() {
 					<Carousel.Item>
 						<div className='full-screen__body-carousel-two'>
 							<div className='full-screen__body-carousel-two-caption'>
-								<div className='full-screen__body-carousel-two-caption-info'>
+								<div className='full-screen__body-carousel-caption-info'>
 									<h4>бренд</h4>
 									<h3>george gina lucy</h3>
 									<p>Смотреть коллекцию</p>
@@ -45,7 +45,7 @@ function FullScreen() {
 					<Carousel.Item>
 						<div className='full-screen__body-carousel-three'>
 							<div className='full-screen__body-carousel-three-caption'>
-								<div className='full-screen__body-carousel-three-caption-info'>
+								<div className='full-screen__body-carousel-caption-info'>
 									<h4>бренд</h4>
 									<h3>deha</h3>
 									<p>Смотреть коллекцию</p>
@@ -59,15 +59,19 @@ function FullScreen() {
 					<Carousel.Item>
 						<div className='full-screen__body-carousel-four'>
 							<div className='full-screen__body-carousel-four-caption'>
-								<div className='full-screen__body-carousel-four-caption-info'>
+								<div className='full-screen__body-carousel-caption-info'>
 									<h4>бренд</h4>
-									<h3>deha</h3>
+									<h3>birkenstock</h3>
 									<p>Смотреть коллекцию</p>
 								</div>
 							</div>
 							<div className='full-screen__body-carousel-four-img'>
-								<img className="d-block w-100" src={fourGerl} alt="banner-four-gerl" />
-								<img className="d-block w-100" src={fourFeets} alt="banner-four-feets" />
+								<div>
+									<img className="d-block w-100" src={fourFeets} alt="banner-four-feets" />
+								</div>
+								<div>
+									<img className="d-block w-100" src={fourGerl} alt="banner-four-gerl" />
+								</div>
 							</div>
 						</div>
 					</Carousel.Item>
