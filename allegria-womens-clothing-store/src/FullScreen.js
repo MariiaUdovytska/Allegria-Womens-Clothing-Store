@@ -18,7 +18,7 @@ function FullScreen() {
 							<div className='full-scren__body-carousel-one-img'>
 								<img className="d-block w-100" src={oneSuit} alt="banner-one-suit" />
 							</div>
-							<div className='full-scren__body-carousel-one-img'>
+							<div className='full-scren__body-carousel-one-img tablet-img-none'>
 								<img className="d-block w-100" src={oneGerl} alt="banner-one-gerl" />
 							</div>
 						</div>
@@ -66,7 +66,7 @@ function FullScreen() {
 								</div>
 							</div>
 							<div className='full-screen__body-carousel-four-img'>
-								<div>
+								<div className='tablet-img-none'>
 									<img className="d-block w-100" src={fourFeets} alt="banner-four-feets" />
 								</div>
 								<div>
