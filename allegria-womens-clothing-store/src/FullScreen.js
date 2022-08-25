@@ -8,6 +8,7 @@ import threeGerlsOnPillow from './image/fullScreen/3girlsOnPillow.jpg';
 import fourGerl from './image/fullScreen/4gerl.jpg';
 import fourFeets from './image/fullScreen/4feets.jpg';
 
+
 function FullScreen() {
 	return (
 		<div className='full-screen'>

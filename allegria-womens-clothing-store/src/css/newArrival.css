@@ -1,0 +1,130 @@
+.new-arrival{
+	margin-top: 100px;
+}
+.new-arrival__body{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 90vh;
+}
+.new-arrival__body-preview{
+	flex: 1 1 45%;
+	background-image: url(../image/newArrival/arrival.jpg);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 2%;
+	padding-right: 3%;
+}
+.new-arrival__body-preview h3{
+	font-size: 6.4rem;
+	font-family: 'Cormorant Garamond', serif;
+	text-transform: uppercase;
+}
+.new-arrival__body-preview p:last-child{
+	text-transform: uppercase;
+	font-size: 1.14rem;
+	margin-top: 25px;
+} 
+
+.new-arrival__body-preview-image{
+	flex: 1 1 55%;
+	background-color: #CEC6C4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.new-arrival__body-preview-image-in{
+	min-width: 75%;
+	min-height: 81%;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.new-arrival__body-preview-image-in-img{
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.new-arrival__body-preview-image-in-img span{
+	position: absolute;
+	bottom:0;
+	left: 0;
+	color: #fff;
+	text-align: center;
+	padding: 2% 4%;
+}
+.new-arrival__body-preview-image-in-img img{
+	height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+@media (max-width:1107px) {
+	.new-arrival__body-preview-image-in-img img{
+		padding: 0 3%;
+	}
+}
+@media (max-width:970px){
+	.new-arrival__body{
+		min-height: 70vh;
+	}
+}
+@media (max-width:836px){
+	.new-arrival__body-preview-image{
+		padding: 0 2%;
+	}
+}
+@media (max-width:768px){
+	.new-arrival__body{
+		flex-direction: column;
+		height: 100%;
+	}
+	.new-arrival__body-preview{
+		flex: 1 1 50%;
+		height: 100%;
+		padding: 150px 50px 230px;
+	}
+	.new-arrival__body-preview-image{
+		flex: 1 1 50%;
+	}
+	.new-arrival__body-preview-image{
+		padding: 9% 7%;
+	}
+	.new-arrival__body-preview-image-in{
+		padding: 11% 10%;
+	}
+}
+@media (max-height:659px){
+	.new-arrival__body-preview-image-in{
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+}
+@media (max-width:541px){
+	.new-arrival__body-preview{
+		flex: 1 1 50%;
+		height: 100%;
+		padding: 100px 50px 180px;
+	}
+	.new-arrival__body-preview-image{
+		padding: 13% 11%;
+	}
+	.new-arrival__body-preview-image-in{
+		padding: 16% 15%;
+	}
+}
+@media (max-width:440px){
+	.new-arrival__body-preview-image{
+		padding: 13% 0;
+	}
+	.new-arrival__body-preview-image-in{
+		padding: 16% 10%;
+	}
+	.new-arrival__body-preview h3{
+		font-size: 3.5rem;
+	}
+}
