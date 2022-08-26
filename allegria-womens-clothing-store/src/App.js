@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Menu from './Menu';
 import FullScreen from './FullScreen';
 import NewArrival from './NewArrival';
+import PreviewAbout from './PreviewAbout';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<main className='main'>
 					<FullScreen />
 					<NewArrival />
+					<PreviewAbout />
 					<div> content test</div>
 				</main>
 				<Footer />
