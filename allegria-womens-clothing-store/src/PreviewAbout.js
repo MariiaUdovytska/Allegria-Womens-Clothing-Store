@@ -2,6 +2,7 @@ import React from 'react';
 import './css/previewAbout.css';
 import previewGerl from './image/about/previewGerl.jpg';
 import outlineElipse from './image/outlineElipse.png';
+import outlineElipseSm from './image/outlineElipseSm.png';
 
 
 function PreviewAbout() {
@@ -15,13 +16,12 @@ function PreviewAbout() {
 				</div>
 				<div className='preview-about__body-forms'>
 					<span></span>
+					<img src={outlineElipseSm} alt="outline-elipse"></img>
 				</div>
 				<div className='preview-about__body-image'>
 					<div className='preview-about__body-image-in'>
 						<div className='preview-about__body-forms-desctop'>
-							<span>
-
-							</span>
+							<span></span>
 							<img src={outlineElipse} alt="outline-elipse"></img>
 						</div>
 						<img src={previewGerl} alt="preview-gerl"></img>
