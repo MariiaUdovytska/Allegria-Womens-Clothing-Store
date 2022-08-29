@@ -1,0 +1,47 @@
+.preview-popular{
+	margin-top: 120px;
+	padding: 0px 15px;
+}
+.preview-popular__body{
+	text-align: center;
+	width: 100%;
+	
+}
+.preview-popular__body h2{
+	font-size: 2.14rem;
+	text-transform: uppercase;
+	color: #0F303F;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+.swiper-pagination{
+	display: none;
+}
+.swiper-slide {
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+/* .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+} */

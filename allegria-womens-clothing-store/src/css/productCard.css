@@ -1,0 +1,57 @@
+.cardd{
+	width: 100%;
+	height: 100%;
+}
+.card__body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+.card__body-hover{}
+.card__body-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.card__body-icons{}
+.card__body-up-like{}
+.card__body-up-sale{}
+.card__body-nameprice{}
+.card__body-nameprice h4{
+	text-transform: uppercase;
+	font-size: 1.29rem;
+	font-weight: 500;
+}
+.card__body-nameprice h5{
+	font-weight: 300;
+	font-size: 1.1rem;
+	text-transform: capitalize;
+}
+.card__body-nameprice-yes{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.card__body-nameprice-price{
+	color: #FD5454;
+	font-weight: 500;
+	margin-left: 4px;
+}
+.card__body-nameprice-price-old{
+	color: #CECECE;
+}
+.card__body-nameprice-price-old span::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin-top: -12px;
+	background-color: #CECECE;
+}
+.card__body-nameprice-instock{}
+.card__body-nameprice-havnot{}
+.card__body-nameprice-reportadmission{}

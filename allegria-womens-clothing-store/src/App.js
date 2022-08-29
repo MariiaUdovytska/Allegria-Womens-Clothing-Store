@@ -2,9 +2,7 @@ import './css/page.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Menu from './Menu';
-import FullScreen from './FullScreen';
-import NewArrival from './NewArrival';
-import PreviewAbout from './PreviewAbout';
+import MainPage from './MainPage';
 
 function App() {
 	return (
@@ -12,10 +10,7 @@ function App() {
 			<div className='page'>
 				<Menu />
 				<main className='main'>
-					<FullScreen />
-					<NewArrival />
-					<PreviewAbout />
-					<div> content test</div>
+					<MainPage />
 				</main>
 				<Footer />
 			</div>

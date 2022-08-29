@@ -172,7 +172,7 @@
 	}
 	.preview-about__body-forms img{
 		display: block;
-		padding-left: 68px;
+		padding-left: 138px;
 		margin-top: -66px;
 		transform: rotateZ(0deg);
 	}
@@ -185,6 +185,12 @@
 		height: 1px;
 		background-color: #fff;
 		transform: rotateZ(-55.81deg); 
+	}
+	.preview-about__body-forms img{
+		display: block;
+		padding-left: 68px;
+		margin-top: -66px;
+		transform: rotateZ(0deg);
 	}
 }
 @media (max-width:568px){
