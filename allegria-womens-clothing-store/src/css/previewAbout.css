@@ -178,6 +178,9 @@
 	}
 }
 @media (max-width:768px){
+	.preview-about{
+		margin-top: 38px;
+	}
 	.preview-about__body-forms span{
 		width: 178px;
 		content: "";

@@ -110,5 +110,14 @@
 	margin-top: -12px;
 	background-color: #CECECE;
 }
-.card__body-nameprice-instock{}
-.card__body-nameprice-havnot{}
+@media (max-width:400px) {
+	.card__body-nameprice-yes{
+		font-size: 0.93rem;
+	}
+	.card__body-nameprice h4{
+		font-size: 1.14rem;
+	}
+	.card__body-nameprice h5{
+		font-size: 1rem;
+	}
+}
