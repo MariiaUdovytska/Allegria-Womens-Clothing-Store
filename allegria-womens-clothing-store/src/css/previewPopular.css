@@ -1,21 +1,27 @@
 .preview-popular{
-	margin-top: 120px;
+	max-width: 1085px;
+   margin: 120px auto 0px;
 	padding: 0px 15px;
 }
 .preview-popular__body{
 	text-align: center;
 	width: 100%;
-	
+	height: 100%;
 }
 .preview-popular__body h2{
 	font-size: 2.14rem;
 	text-transform: uppercase;
 	color: #0F303F;
 	font-family: 'Cormorant Garamond', serif;
+	margin-bottom: 70px;
 }
 
-.swiper {
+.swiper {}
+.mySwiper{
+	height: 100%!important;
 	width: 100%;
+}
+.swiper-wrapper{
 	height: 100%;
 }
 .swiper-pagination{
@@ -23,6 +29,8 @@
 }
 .swiper-slide {
 	background: #fff;
+	min-height: 100%!important;
+	height: unset!important;
 
 	/* Center slide text vertically */
 	display: -webkit-box;
