@@ -13,7 +13,6 @@ function ModalWindow(props) {
 			centered
 		>
 			<Modal.Header closeButton>
-
 			</Modal.Header>
 			<Modal.Body>
 				<div className='modal__form'>
