@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Footer';
 import Menu from './Menu';
 import MainPage from './MainPage';
+import ModalWindow from './ModalWindow';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 					<MainPage />
 				</main>
 				<Footer />
+				<ModalWindow show={true} />
 			</div>
 		</div>
 	);
