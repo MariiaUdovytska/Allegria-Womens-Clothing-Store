@@ -13,7 +13,7 @@ class ModalWindowTimer extends React.Component {
 	componentDidMount() {
 		this.timerId = setTimeout(
 			() => this.tick(),
-			5000
+			6000
 		);
 	}
 	componentWillUnmount() {

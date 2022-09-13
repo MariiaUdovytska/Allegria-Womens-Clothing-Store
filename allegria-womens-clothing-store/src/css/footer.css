@@ -87,6 +87,11 @@
 		padding: 0px 10px;
 	}
 }
+@media (max-width:680px){
+	.footer{
+		border-top: none;
+	}
+}
 @media (max-width:399px){
 	.footer__body-subfooter-imfo{
 		font-size: 0.6rem;

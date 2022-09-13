@@ -2,7 +2,7 @@
 	text-align: center;
 	color: #0F303F;
 }
-.modal.show .modal-dialog{
+.modal.fade .modal-dialog{
 	max-width: 550px;
 }
 .modal-header{
