@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Menu from './Menu';
 import MainPage from './MainPage';
 import ModalWindowTimer from './ModalWindowTimer';
+import About from './about/About';
 
 function App() {
 	return (
@@ -11,7 +12,7 @@ function App() {
 			<div className='page'>
 				<Menu />
 				<main className='main'>
-					<MainPage />
+					<About />
 				</main>
 				<Footer />
 				<ModalWindowTimer />
