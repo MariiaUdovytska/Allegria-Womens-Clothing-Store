@@ -21,6 +21,11 @@
 	margin: 0px auto;
 }
 
+.router-link a{
+	text-decoration: none;
+	color: unset!important;
+}
+
 .main{
 	flex: 1 1 auto;
 	padding: 60px 0px 0px 0px;

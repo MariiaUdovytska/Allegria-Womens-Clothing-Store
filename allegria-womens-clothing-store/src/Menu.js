@@ -7,6 +7,7 @@ import g from './image/logo/g.png';
 import r from './image/logo/r.png';
 import i from './image/logo/i.png';
 import MenuDetailed from './MenuDetailed';
+import { Link } from 'react-router-dom';
 
 class Menu extends React.Component {
 	constructor(props) {
@@ -46,16 +47,18 @@ class Menu extends React.Component {
 			case 'desktop': return (
 				<header className='menu'>
 					<div className='containerM'>
-						<div className='menu__body'>
-							<div className='menu__logo'>
-								<img src={a} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={e} alt="logo" />
-								<img src={g} alt="logo" />
-								<img src={r} alt="logo" />
-								<img src={i} alt="logo" />
-								<img src={a} alt="logo" />
+						<div className='menu__body '>
+							<div className='menu__logo router-link'>
+								<Link to="/home">
+									<img src={a} alt="logo" />
+									<img src={l} alt="logo" />
+									<img src={l} alt="logo" />
+									<img src={e} alt="logo" />
+									<img src={g} alt="logo" />
+									<img src={r} alt="logo" />
+									<img src={i} alt="logo" />
+									<img src={a} alt="logo" />
+								</Link>
 							</div>
 							<nav className='menu__navigate'>
 								<ul>
@@ -94,14 +97,16 @@ class Menu extends React.Component {
 					<div className='containerM'>
 						<div className='menu__body'>
 							<div className='menu__logo'>
-								<img src={a} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={e} alt="logo" />
-								<img src={g} alt="logo" />
-								<img src={r} alt="logo" />
-								<img src={i} alt="logo" />
-								<img src={a} alt="logo" />
+								<Link to="/home">
+									<img src={a} alt="logo" />
+									<img src={l} alt="logo" />
+									<img src={l} alt="logo" />
+									<img src={e} alt="logo" />
+									<img src={g} alt="logo" />
+									<img src={r} alt="logo" />
+									<img src={i} alt="logo" />
+									<img src={a} alt="logo" />
+								</Link>
 							</div>
 							<div className='menu__phone-right'>
 								<div className='menu__icons'>
@@ -157,15 +162,17 @@ class Menu extends React.Component {
 				<header className='menu'>
 					<div className='containerM'>
 						<div className='menu__body'>
-							<div className='menu__logo'>
-								<img src={a} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={e} alt="logo" />
-								<img src={g} alt="logo" />
-								<img src={r} alt="logo" />
-								<img src={i} alt="logo" />
-								<img src={a} alt="logo" />
+							<div className='menu__logo roter-link'>
+								<Link to="/home">
+									<img src={a} alt="logo" />
+									<img src={l} alt="logo" />
+									<img src={l} alt="logo" />
+									<img src={e} alt="logo" />
+									<img src={g} alt="logo" />
+									<img src={r} alt="logo" />
+									<img src={i} alt="logo" />
+									<img src={a} alt="logo" />
+								</Link>
 							</div>
 							<div className='menu__phone-right'>
 								<div className='menu__icons'>

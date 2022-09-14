@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/footer.css';
 import { Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Footer() {
 	return (
@@ -15,7 +16,7 @@ function Footer() {
 					</Form>
 					<nav className='footer__body-navigation'>
 						<ul>
-							<li>О&nbsp;нас</li>
+							<li className='router-link'><Link to="/about">О&nbsp;нас</Link></li>
 							<li>Распространенные вопросы</li>
 							<li>Бренды</li>
 						</ul>
