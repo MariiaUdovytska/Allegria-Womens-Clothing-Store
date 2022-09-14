@@ -54,7 +54,7 @@ html,body{
 	height: 100%;
 	font-size: 14px;
 	line-height: 1;
-	color: #0F303F;
+	color: #0F303F!important;
 	font-family: -apple-system, BlinkMacSystemFont, 'AvenirLTStd-Book', serif;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;

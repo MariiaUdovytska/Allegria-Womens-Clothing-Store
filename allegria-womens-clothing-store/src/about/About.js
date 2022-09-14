@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/about/about.css';
 // import fullFoto from '../image/aboutPage/fuulscreen.png';
 import image32 from '../image/aboutPage/image32.png';
+import image62 from '../image/aboutPage/image62.png';
 import outlineElipse from '../image/outlineElipse.png';
 
 function About() {
@@ -27,6 +28,26 @@ function About() {
 							<img src={image32} alt='hands'></img>
 						</div>
 					</div>
+				</div>
+				<div className='about__body-textsecond'>
+					<h3>о нас</h3>
+					<p>Броские сумки George Gina & Lucy поднимают настроение и своим обладательницам и<br></br> окружающим.</p>
+					<p>Birkenstock – это обувь с мягкой ортопедической стелькой, позволяющая долгое время<br></br> находиться в обуви не уставая.</p>
+					<p>Для всех представленных в бутике брендов важным приоритетом является <br></br>экологическая безопасность одежды и производства.</p>
+				</div>
+				<div className='about__body-secondphotos'>
+					<div className='about__body-secondphotos-imgs containerM'>
+						<div className='about__body-secondphotos-left'></div>
+						<div className='about__body-secondphotos-right'>
+							<div className='about__body-secondphotos-right-forms-desctop'>
+								<span></span>
+							</div>
+							<img src={image62} alt='gerl in suit'></img>
+						</div>
+					</div>
+				</div>
+				<div className='about__body-textfooter'>
+					<p>Для всех представленных в бутике брендов важным приоритетом является экологическая безопасность одежды и производства.</p>
 				</div>
 			</div>
 		</div>
