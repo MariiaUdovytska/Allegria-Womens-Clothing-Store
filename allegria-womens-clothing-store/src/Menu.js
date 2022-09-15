@@ -49,7 +49,15 @@ class Menu extends React.Component {
 					<div className='containerM'>
 						<div className='menu__body '>
 							<div className='menu__logo router-link'>
-								<Link to="/home">
+								<img src={a} alt="logo" />
+								<img src={l} alt="logo" />
+								<img src={l} alt="logo" />
+								<img src={e} alt="logo" />
+								<img src={g} alt="logo" />
+								<img src={r} alt="logo" />
+								<img src={i} alt="logo" />
+								<img src={a} alt="logo" />
+								{/* <Link to="/home">
 									<img src={a} alt="logo" />
 									<img src={l} alt="logo" />
 									<img src={l} alt="logo" />
@@ -58,7 +66,7 @@ class Menu extends React.Component {
 									<img src={r} alt="logo" />
 									<img src={i} alt="logo" />
 									<img src={a} alt="logo" />
-								</Link>
+								</Link> */}
 							</div>
 							<nav className='menu__navigate'>
 								<ul>
@@ -97,7 +105,15 @@ class Menu extends React.Component {
 					<div className='containerM'>
 						<div className='menu__body'>
 							<div className='menu__logo'>
-								<Link to="/home">
+								<img src={a} alt="logo" />
+								<img src={l} alt="logo" />
+								<img src={l} alt="logo" />
+								<img src={e} alt="logo" />
+								<img src={g} alt="logo" />
+								<img src={r} alt="logo" />
+								<img src={i} alt="logo" />
+								<img src={a} alt="logo" />
+								{/* <Link to="/home">
 									<img src={a} alt="logo" />
 									<img src={l} alt="logo" />
 									<img src={l} alt="logo" />
@@ -106,7 +122,7 @@ class Menu extends React.Component {
 									<img src={r} alt="logo" />
 									<img src={i} alt="logo" />
 									<img src={a} alt="logo" />
-								</Link>
+								</Link> */}
 							</div>
 							<div className='menu__phone-right'>
 								<div className='menu__icons'>
@@ -163,7 +179,15 @@ class Menu extends React.Component {
 					<div className='containerM'>
 						<div className='menu__body'>
 							<div className='menu__logo roter-link'>
-								<Link to="/home">
+								<img src={a} alt="logo" />
+								<img src={l} alt="logo" />
+								<img src={l} alt="logo" />
+								<img src={e} alt="logo" />
+								<img src={g} alt="logo" />
+								<img src={r} alt="logo" />
+								<img src={i} alt="logo" />
+								<img src={a} alt="logo" />
+								{/* <Link to="/home">
 									<img src={a} alt="logo" />
 									<img src={l} alt="logo" />
 									<img src={l} alt="logo" />
@@ -172,7 +196,7 @@ class Menu extends React.Component {
 									<img src={r} alt="logo" />
 									<img src={i} alt="logo" />
 									<img src={a} alt="logo" />
-								</Link>
+								</Link> */}
 							</div>
 							<div className='menu__phone-right'>
 								<div className='menu__icons'>

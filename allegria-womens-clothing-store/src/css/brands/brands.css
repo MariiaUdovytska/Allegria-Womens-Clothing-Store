@@ -1,0 +1,78 @@
+.brands{}
+.brands__body{
+	display: flex;
+	flex-direction: column;
+}
+.brands__body section{
+	position: relative;
+}
+.brands__body-full{
+	background-position: 50%;
+	background-size: cover;
+	height: 91%;
+	width: 100%;
+} 
+.full-screen1{
+	background-image: url(../../image/brandsPage/fullscreen.png);
+}
+.full-screen2{
+	background-image: url(../../image/brandsPage/girlsOnPillow.jpg);
+}
+.full-screen3{
+	background-image: url(../../image/brandsPage/image70.png);
+	height: 91vh;
+}
+.full-screen4{
+	background-image: url(../../image/brandsPage/image60.png);
+}
+.full-screen2::after,
+.full-screen4::after{
+	width: 100%;
+	height: 91vh;
+	position: absolute;
+	content: "";
+	top:0;
+	left: 0;
+	background: linear-gradient(222.98deg, #2323236b 5.36%, #00000041 60.13%);
+}
+.brands__body-full-text{
+	color: #fff;
+	max-width: 625px;
+	height: 91vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0px auto;
+	text-align: center;
+	padding: 0px 15px;
+}
+.brands__body-full-text h4,
+.brands__body-full-text3 h4{
+	font-weight: 500;
+	font-size: 1.42rem;
+	text-transform: uppercase;
+	font-family: 'Cormorant Garamond', serif;
+	z-index: 2;
+}
+.brands__body-full-text h3,
+.brands__body-full-text3 h3{
+	font-weight: 500;
+	font-size: 2.85rem;
+	text-transform: uppercase;
+	font-family: 'Cormorant Garamond', serif;
+	z-index: 2;
+}
+.brands__body-full-text p{
+	z-index: 2;
+}
+.brands__body-full-text3{
+	color: black;
+	max-width: 625px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0px auto;
+	text-align: center;
+	padding: 0px 15px;
+}

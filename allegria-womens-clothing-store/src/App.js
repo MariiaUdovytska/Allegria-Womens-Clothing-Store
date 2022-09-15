@@ -7,28 +7,30 @@ import ModalWindowTimer from './ModalWindowTimer';
 import About from './about/About';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
+import BrandsPage from './brands/BrandsPage';
 
 function App() {
 	return (
 		<div className='wrapper'>
 			<div className='page'>
-				<BrowserRouter basename="/Allegria-Womens-Clothing-Store">
-					<ScrollToTop />
-					<Menu />
-					<Routes>
-						<Route exact path="/" element={<MainPage />} />
-						<Route exact path="/home" element={<MainPage />} />
-						<Route path="/about" element={<About />} exact />
-					</Routes>
-					<Footer />
-					<ModalWindowTimer />
-				</BrowserRouter>
-				{/* <Menu />
+				<Menu />
 				<main className='main'>
-					<About />
+					<BrandsPage />
 				</main>
 				<Footer />
-				<ModalWindowTimer /> */}
+				{/* <BrowserRouter> <BrowserRouter basename="/Allegria-Womens-Clothing-Store">
+					<ScrollToTop />
+					<Menu />
+					<main className='main'>
+						<Routes>
+							<Route exact path="/" element={<MainPage />} />
+							<Route exact path="/home" element={<MainPage />} />
+							<Route path="/about" element={<About />} exact />
+						</Routes>
+					</main>
+					<Footer />
+					<ModalWindowTimer />
+				</BrowserRouter> */}
 			</div>
 		</div>
 	);
