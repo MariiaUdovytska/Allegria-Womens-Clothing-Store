@@ -10,7 +10,7 @@ function BrandsPage() {
 	return (
 		<div className='brands'>
 			<div className='brands__body'>
-				<section>
+				<section id="section-one">
 					<div className='brands__body-full full-screen1'>
 						<div className='brands__body-full-text'>
 							<h4>бренд</h4>
@@ -31,7 +31,7 @@ function BrandsPage() {
 						</div>
 					</div>
 				</section>
-				<section>
+				<section id="section-two">
 					<div className='brands__body-full full-screen2'>
 						<div className='brands__body-full-text'>
 							<h4>бренд</h4>
@@ -58,7 +58,7 @@ function BrandsPage() {
 						</div>
 					</div>
 				</section>
-				<section>
+				<section id="section-three">
 					<div className='brands__body-full-text3'>
 						<h4>бренд</h4>
 						<h3>george gina & lucy</h3>
@@ -75,7 +75,7 @@ function BrandsPage() {
 						</div>
 					</div>
 				</section>
-				<section>
+				<section id="section-four">
 					<div className='brands__body-full full-screen4'>
 						<div className='brands__body-full-text'>
 							<h4>бренд</h4>

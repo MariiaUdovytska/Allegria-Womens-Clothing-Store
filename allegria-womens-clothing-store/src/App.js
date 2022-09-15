@@ -13,12 +13,12 @@ function App() {
 	return (
 		<div className='wrapper'>
 			<div className='page'>
-				<Menu />
+				{/* <Menu />
 				<main className='main'>
 					<BrandsPage />
 				</main>
-				<Footer />
-				{/* <BrowserRouter> <BrowserRouter basename="/Allegria-Womens-Clothing-Store">
+				<Footer /> */}
+				<BrowserRouter> {/* <BrowserRouter basename="/Allegria-Womens-Clothing-Store"> */}
 					<ScrollToTop />
 					<Menu />
 					<main className='main'>
@@ -26,11 +26,12 @@ function App() {
 							<Route exact path="/" element={<MainPage />} />
 							<Route exact path="/home" element={<MainPage />} />
 							<Route path="/about" element={<About />} exact />
+							<Route path="/brands" element={<BrandsPage />} exact />
 						</Routes>
 					</main>
 					<Footer />
 					<ModalWindowTimer />
-				</BrowserRouter> */}
+				</BrowserRouter>
 			</div>
 		</div>
 	);

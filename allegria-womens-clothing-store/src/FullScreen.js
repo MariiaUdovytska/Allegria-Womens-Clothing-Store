@@ -7,6 +7,8 @@ import twoGerls from './image/fullScreen/2gerls.jpg';
 import threeGerlsOnPillow from './image/fullScreen/3girlsOnPillow.jpg';
 import fourGerl from './image/fullScreen/4gerl.jpg';
 import fourFeets from './image/fullScreen/4feets.jpg';
+import { HashLink, NavHashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 
 function FullScreen() {
@@ -26,7 +28,7 @@ function FullScreen() {
 						<Carousel.Caption>
 							<h4>бренд</h4>
 							<h3>american vintage</h3>
-							<p>Смотреть коллекцию</p>
+							<p className='router-link '><Link smooth to="/brands">Cмотреть коллекцию</Link></p>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
@@ -35,7 +37,7 @@ function FullScreen() {
 								<div className='full-screen__body-carousel-caption-info'>
 									<h4>бренд</h4>
 									<h3>george gina lucy</h3>
-									<p>Смотреть коллекцию</p>
+									<p className='router-link '><HashLink to="/brands#section-three">Cмотреть коллекцию</HashLink></p>
 								</div>
 							</div>
 							<div className='full-screen__body-carousel-two-img'>
@@ -49,7 +51,7 @@ function FullScreen() {
 								<div className='full-screen__body-carousel-caption-info'>
 									<h4>бренд</h4>
 									<h3>deha</h3>
-									<p>Смотреть коллекцию</p>
+									<p className='router-link '><HashLink to="/brands#section-two">Cмотреть коллекцию</HashLink></p>
 								</div>
 							</div>
 							<div className='full-screen__body-carousel-three-img'>
@@ -63,7 +65,7 @@ function FullScreen() {
 								<div className='full-screen__body-carousel-caption-info'>
 									<h4>бренд</h4>
 									<h3>birkenstock</h3>
-									<p>Смотреть коллекцию</p>
+									<p className='router-link'><HashLink to="/brands#section-four">Cмотреть коллекцию</HashLink></p>
 								</div>
 							</div>
 							<div className='full-screen__body-carousel-four-img'>
