@@ -16,7 +16,7 @@
 	background-image: url(../../image/brandsPage/fullscreen.png);
 }
 .full-screen2{
-	background-image: url(../../image/brandsPage/girlsOnPillow.jpg);
+	background-image: url(../../image/brandsPage/girlsOnPillow.png);
 }
 .full-screen3{
 	background-image: url(../../image/brandsPage/image70.png);
@@ -75,4 +75,101 @@
 	margin: 0px auto;
 	text-align: center;
 	padding: 0px 15px;
+}
+
+
+.brands__body-info{
+	max-width:  1145px;
+	margin: 120px auto 120px;
+	padding: 0px 15px;
+} 
+.info1{}
+.brands__body-info-up{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 350px;
+}
+.brands__body-info-up-img{
+	flex:  1 1 35%;
+	background-position: center;
+	background-size: cover;
+}
+.info-img1{
+	background-image: url(../../image/brandsPage/image32.png);
+}
+.info-img2{
+	background-image: url(../../image/brandsPage/image61.png);
+}
+.info-img3{
+	background-image: url(../../image/brandsPage/image71.png);
+	flex: 1 1 23%!important;
+}
+.info-img4{
+	background-image: url(../../image/brandsPage/image61gerlwshoose\ .png);
+}
+.brands__body-info-up-text{
+	flex:  1 1 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.brands__body-info-up-text h5{
+	text-transform: uppercase;
+	font-size: 1.78rem;
+	font-weight: 800;
+	margin-bottom: 25px;
+}
+.brands__body-info-up-text p{
+	opacity: 0.7;
+}
+.up-text1{
+	padding-left: 8%;
+}
+.up-text2{
+	padding-right: 8%;
+	text-align: center;
+}
+.up-text3{
+	flex: 1 1 77%!important;
+	padding-left: 8%;
+}
+.brands__body-info-down1{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 40px;
+}
+.brands__body-info-down2{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 40px;
+}
+.brands__body-info-down1 img{
+	margin-right: 15%;
+}
+
+
+.brands__body-info-down2-combiantion{
+position: relative;
+margin-left: 15%;
+}
+.brands__body-info-down2-forms{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.brands__body-info-down2-forms span::before{
+	width: 318px;
+	content: "";
+	display: block;
+	height: 1px;
+	background-color: #CEC6C4;
+	transform: rotateZ(-148.53deg);
+	margin-left: -128px;
+	margin-bottom: -72px;
+
+}
+.brands__body-info-down2-forms img{
+	margin-left: -58px;
+   margin-bottom: -37px;
 }
