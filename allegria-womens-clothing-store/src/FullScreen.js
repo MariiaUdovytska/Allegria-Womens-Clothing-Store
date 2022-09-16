@@ -28,7 +28,7 @@ function FullScreen() {
 						<Carousel.Caption>
 							<h4>бренд</h4>
 							<h3>american vintage</h3>
-							<p className='router-link '><Link smooth to="/brands">Cмотреть коллекцию</Link></p>
+							<p className='router-link '><Link to="/brands">Cмотреть коллекцию</Link></p>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>

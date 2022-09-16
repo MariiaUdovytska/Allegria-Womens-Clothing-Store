@@ -30,7 +30,7 @@ function App() {
 						</Routes>
 					</main>
 					<Footer />
-					<ModalWindowTimer />
+					{/* <ModalWindowTimer /> */}
 				</BrowserRouter>
 			</div>
 		</div>
