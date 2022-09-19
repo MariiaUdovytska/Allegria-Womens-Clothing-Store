@@ -98,6 +98,13 @@
 	.registration__body-allforms{
 		padding: 0px 15px;
 	}
+	.PhoneInput{
+		margin-bottom: 14px;
+		height: 32px;
+	}
+	.registration__body-margbott{
+		margin-bottom: 14px;
+	}
 	.PhoneInput,
 	.registration__body-password{
 		width: 100%;

@@ -12,7 +12,7 @@ function Registration() {
 				<h2>Регистрация</h2>
 				<Form noValidate className='registration__body-allforms'>
 					<Row className="mb-4">
-						<Form.Group as={Col} md="6" controlId="validationCustom01">
+						<Form.Group as={Col} md="6" className='registration__body-margbott' controlId="validationCustom01">
 							<Form.Control
 								required
 								type="text"

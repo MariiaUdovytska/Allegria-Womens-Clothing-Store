@@ -127,7 +127,7 @@ class Menu extends React.Component {
 							<div className='menu__phone-right'>
 								<div className='menu__icons'>
 									<i className="bi bi-person" style={{ fontSize: '23px' }}></i>
-									<i className="bi bi-heart" style={{ fontSize: '19px' }}></i>
+									<Link to="/registration" ><i className="bi bi-heart" style={{ fontSize: '19px' }}></i></Link>
 									<i className="bi bi-bag" style={{ fontSize: '20px' }}></i>
 								</div>
 								<div className='menu__burger' onClick={() => this.setState({ openBurger: !this.state.openBurger })}>
