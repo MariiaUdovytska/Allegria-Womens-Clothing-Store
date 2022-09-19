@@ -8,6 +8,7 @@ import About from './about/About';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 import BrandsPage from './brands/BrandsPage';
+import Registration from './singInRegistrationConfirmation/Registration';
 
 function App() {
 	return (
@@ -15,10 +16,10 @@ function App() {
 			<div className='page'>
 				{/* <Menu />
 				<main className='main'>
-					<BrandsPage />
+					<About />
 				</main>
 				<Footer /> */}
-				<BrowserRouter> {/* <BrowserRouter basename="/Allegria-Womens-Clothing-Store"> */}
+				<BrowserRouter> {/*<BrowserRouter basename="/Allegria-Womens-Clothing-Store">*/}
 					<ScrollToTop />
 					<Menu />
 					<main className='main'>
@@ -27,6 +28,7 @@ function App() {
 							<Route exact path="/home" element={<MainPage />} />
 							<Route path="/about" element={<About />} exact />
 							<Route path="/brands" element={<BrandsPage />} exact />
+							<Route path="/registration" element={<Registration />} exact />
 						</Routes>
 					</main>
 					<Footer />
