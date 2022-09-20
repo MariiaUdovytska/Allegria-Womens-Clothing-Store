@@ -8,6 +8,7 @@ import r from './image/logo/r.png';
 import i from './image/logo/i.png';
 import MenuDetailed from './MenuDetailed';
 import { Link } from 'react-router-dom';
+import SingInModal from './singInRegistrationConfirmation/SingInModal';
 
 class Menu extends React.Component {
 	constructor(props) {
@@ -16,6 +17,7 @@ class Menu extends React.Component {
 			menuDetales: false,
 			sizeWidthType: 'desktop',
 			openBurger: false,
+			show: false
 		}
 	}
 	getWindowDimensions = () => {
@@ -49,14 +51,6 @@ class Menu extends React.Component {
 					<div className='containerM'>
 						<div className='menu__body '>
 							<div className='menu__logo router-link'>
-								{/* <img src={a} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={e} alt="logo" />
-								<img src={g} alt="logo" />
-								<img src={r} alt="logo" />
-								<img src={i} alt="logo" />
-								<img src={a} alt="logo" /> */}
 								<Link to="/home">
 									<img src={a} alt="logo" />
 									<img src={l} alt="logo" />
@@ -89,8 +83,9 @@ class Menu extends React.Component {
 								</ul>
 							</div>
 							<div className='menu__icons'>
-								<i className="bi bi-person" style={{ fontSize: '23px' }}></i>
-								<Link to="/registration" ><i className="bi bi-heart" style={{ fontSize: '19px' }}></i></Link>
+								<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
+								<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
+								<i className="bi bi-heart" style={{ fontSize: '19px' }}></i>
 								<i className="bi bi-bag" style={{ fontSize: '20px' }}></i>
 							</div>
 							<div className={((this.state.menuDetales === true) ? 'menu__detailed menu__detailed-active' : 'menu__detailed')}>
@@ -105,14 +100,6 @@ class Menu extends React.Component {
 					<div className='containerM'>
 						<div className='menu__body'>
 							<div className='menu__logo'>
-								{/* <img src={a} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={e} alt="logo" />
-								<img src={g} alt="logo" />
-								<img src={r} alt="logo" />
-								<img src={i} alt="logo" />
-								<img src={a} alt="logo" /> */}
 								<Link to="/home">
 									<img src={a} alt="logo" />
 									<img src={l} alt="logo" />
@@ -126,8 +113,9 @@ class Menu extends React.Component {
 							</div>
 							<div className='menu__phone-right'>
 								<div className='menu__icons'>
-									<i className="bi bi-person" style={{ fontSize: '23px' }}></i>
-									<Link to="/registration" ><i className="bi bi-heart" style={{ fontSize: '19px' }}></i></Link>
+									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
+									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
+									<i className="bi bi-heart" style={{ fontSize: '19px' }}></i>
 									<i className="bi bi-bag" style={{ fontSize: '20px' }}></i>
 								</div>
 								<div className='menu__burger' onClick={() => this.setState({ openBurger: !this.state.openBurger })}>
@@ -179,14 +167,6 @@ class Menu extends React.Component {
 					<div className='containerM'>
 						<div className='menu__body'>
 							<div className='menu__logo roter-link'>
-								{/* <img src={a} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={l} alt="logo" />
-								<img src={e} alt="logo" />
-								<img src={g} alt="logo" />
-								<img src={r} alt="logo" />
-								<img src={i} alt="logo" />
-								<img src={a} alt="logo" /> */}
 								<Link to="/home">
 									<img src={a} alt="logo" />
 									<img src={l} alt="logo" />
@@ -200,7 +180,8 @@ class Menu extends React.Component {
 							</div>
 							<div className='menu__phone-right'>
 								<div className='menu__icons'>
-									<i className="bi bi-person" style={{ fontSize: '23px' }}></i>
+									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
+									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
 									<i className="bi bi-heart" style={{ fontSize: '19px' }}></i>
 									<i className="bi bi-bag" style={{ fontSize: '20px' }}></i>
 								</div>
@@ -245,13 +226,11 @@ class Menu extends React.Component {
 										</ul>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</header>
 			)
-
 			default: break;
 		}
 	}

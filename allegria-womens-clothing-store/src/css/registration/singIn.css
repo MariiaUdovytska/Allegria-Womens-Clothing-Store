@@ -1,0 +1,71 @@
+.modal-content{
+	border-radius: unset;
+}
+.modal.fade .modal-dialog{
+	max-width: 425px;
+}
+.modal__form-singin {
+	max-width: 280px;
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+.modal__form-singin h3{
+	margin-top: 17px;
+	margin-bottom: 35px;
+}
+.modal__form-singin .form-control{
+	border: none;
+	border-bottom: 1px solid #0F303F;
+	border-radius: 0rem;
+}
+.modal__form-bts .form-control{
+	padding: 0.375rem 0rem;
+}
+.modal__form-bts .form-control:focus{
+	border-bottom: 1px solid #0F303F;
+	box-shadow: none;
+}
+.modal__form-bts .form-control::placeholder{
+	font-size: 1.14rem;
+	color: #B7C1C5;
+}
+.modal{
+	--bs-modal-header-border-color: none;
+	--bs-modal-footer-border-color: none;
+}
+.modal__form-singin .registration__body-password {
+	width: 100%;
+	margin: 0;
+}
+.modal__btn button{
+	font-weight: 800;
+}
+.modal-footer {
+	display: flex;
+	flex-direction: column;
+}
+.modal__questions{
+	margin-top: 30px;
+	color: #E64926;
+	font-size: 0.94rem;
+	text-align: center;
+}
+@media (max-width:767px){
+	.modal__form-bts .form-control{
+		padding: 0.375rem 0.75rem;
+	}
+}
+
+@media (max-width:306px) {
+	.modal__form-singin.registration__body-password input {
+		width: 100%;
+	}
+	.modal__btn{
+		width: 100%;
+	}
+	.modal__btn button{
+		font-weight: 500;
+		width: 100%;
+	}
+}

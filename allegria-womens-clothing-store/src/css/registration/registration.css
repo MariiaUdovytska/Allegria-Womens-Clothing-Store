@@ -25,6 +25,7 @@
 }
 .registration__body .form-control::placeholder{
 	font-size: 1.14rem;
+	color: #B7C1C5;
 }
 
 .PhoneInput{
@@ -32,6 +33,9 @@
 	margin-left: 10px;
 	margin-right: 10px;
 	width: 46%;
+}
+.PhoneInputInput::placeholder{
+	color: #B7C1C5;
 }
 .form-check-input[type=checkbox] {
 	border-radius: 0;
@@ -43,7 +47,6 @@
 .form-check-label{
 	font-size: 0.85rem;
 }
-
 
 .registration__body-password{
 	border-bottom: 1px solid #0F303F;
@@ -61,6 +64,7 @@
 }
 .registration__body-password input::placeholder{
 	font-size: 1.15rem;
+	color: #B7C1C5;
 }
 
 .registration__body-btn{
@@ -75,6 +79,7 @@
 .registration__body-btn-text span,
 .registration__body-check span{
 	color: #E64926;
+	cursor: pointer;
 }
 .registration__body-btn .btn-primary {
 	--bs-btn-bg: #0F303F;
@@ -139,5 +144,8 @@
 	}
 	.registration__body-btn .btn{
 		font-size: 1rem;
+	}
+	.registration__body-password input {
+		width: 100%;
 	}
 }
