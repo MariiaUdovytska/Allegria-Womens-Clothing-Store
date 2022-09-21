@@ -17,7 +17,7 @@ class ProductsSide extends React.Component {
 						<ExtensionFilter />
 					</div>
 					<div className='side-products__sort'>
-						<span>quantity cards</span>
+						<span>nnn товаров</span>
 						<SortProducts />
 					</div>
 				</div>

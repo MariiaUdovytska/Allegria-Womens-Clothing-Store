@@ -23,3 +23,11 @@
 	margin-top: 25px;
 	margin-bottom: 70px;
 }
+.side-products__sort span{
+	opacity: 0.3;
+}
+@media (max-width:1094px){
+	.side-products__filter{
+		width: 100%;
+	}
+}
