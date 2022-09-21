@@ -1,8 +1,7 @@
 import React from 'react';
 import '../css/productCardsPage/productCardsPage.css';
 import FilterProdcts from './FilterProdcts';
-import SortProducts from './SortProducts';
-import ExtensionFilter from './ExtensionFilter';
+import ProductsSide from './ProductsSide';
 
 class ProductCardsPage extends React.Component {
 	constructor(props) {
@@ -13,15 +12,11 @@ class ProductCardsPage extends React.Component {
 		return (
 			<div className='products containerM'>
 				<div className='products__body'>
-					<FilterProdcts />
-					<div className='products__body-sadeproducts'>
-						<h1>name category</h1>
-						<div className='products__body-sadeproducts-filter'>
-							<ExtensionFilter />
-						</div>
-						<div className='products__body-sadeproducts-sort'>
-							<SortProducts />
-						</div>
+					<div className='products__body-sidefilter'>
+						<FilterProdcts openAccordion={true} />
+					</div>
+					<div className='products__body-sideproducts'>
+						<ProductsSide />
 					</div>
 				</div>
 			</div>

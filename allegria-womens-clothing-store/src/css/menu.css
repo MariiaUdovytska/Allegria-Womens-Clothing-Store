@@ -56,9 +56,9 @@
 	padding-left: 0px;
 }
 .menu__navigate ul li{
-	padding: 0px 40px;
+	/* padding: 0px 40px; */
 	cursor: pointer;
-	padding: 23px 20px 0px ;
+	padding: 23px 20px 0px;
 }
 .menu__navigate ul li:nth-child(even){
 	color: #B7C1C5;

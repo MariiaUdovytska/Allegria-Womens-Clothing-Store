@@ -1,0 +1,33 @@
+.filter .menu__navigate ul{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0px -10px;
+}
+.filter .menu__navigate ul li{
+	padding: 0px 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+.filter__accordion .accordion-button{
+	justify-content: flex-start;
+
+}
+.filter__accordion .accordion{
+	--bs-accordion-btn-padding-x: 0rem;
+	--bs-accordion-btn-padding-y: 1rem;
+}
+.filter__accordion .accordion-body{
+	--bs-accordion-body-padding-x: 0rem;
+   --bs-accordion-body-padding-y: 0.5rem;
+}
+
+@media (max-width:1122px) {
+	.filter .menu__navigate ul{
+		margin: 0px -4px;
+	}
+	.filter .menu__navigate ul li{
+		padding: 0px 4px;
+	}
+}

@@ -5,7 +5,7 @@ import '../css/productCardsPage/extensionFilter.css';
 function ExtensionFilter() {
 	return (
 		<div className='extension-filter'>
-			extension-filte
+			extension-filter
 		</div>
 	);
 }

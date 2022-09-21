@@ -1,0 +1,30 @@
+.products{
+	margin-top: 40px;
+}
+.products__body{
+	display: flex;
+	flex-direction: row;
+	margin: 0px -10px;
+}
+.products__body-sidefilter{
+	flex: 1 1 20%;
+	padding: 0px 10px;
+}
+.products__body-sideproducts{
+	flex: 1 1 80%;
+	padding: 0px 10px;
+}
+
+@media (max-width:1122px) {
+	.products__body{
+		margin: 0px -4px;
+	}
+	.products__body-sidefilter{
+		flex: 1 1 15%;
+		padding: 0px 4px;
+	}
+	.products__body-sideproducts{
+		flex: 1 1 85%;
+		padding: 0px 4px;
+	}
+}

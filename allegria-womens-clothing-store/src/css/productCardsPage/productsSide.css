@@ -1,0 +1,25 @@
+.side-products{
+}
+.side-products h1{
+	line-height: 1.5rem;
+	margin-bottom: 45px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.78rem;
+}
+
+.side-products-filt{
+	display: flex;
+	flex-direction: column;
+}
+.side-products__filter{
+	width: 90%;
+}
+.side-products__sort{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 25px;
+	margin-bottom: 70px;
+}

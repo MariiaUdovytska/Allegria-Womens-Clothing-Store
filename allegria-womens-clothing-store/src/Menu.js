@@ -44,7 +44,6 @@ class Menu extends React.Component {
 		window.removeEventListener('resize', this.handleWindowDimensions);
 	}
 	render() {
-		// const { sizeWidthType } = this.state;
 		switch (this.state.sizeWidthType) {
 			case 'desktop': return (
 				<header className='menu'>
