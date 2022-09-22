@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/productCardsPage/productsSide.css';
 import SortProducts from './SortProducts';
 import ExtensionFilter from './ExtensionFilter';
+import PagesGridProducts from './PagesGridProducts';
 
 class ProductsSide extends React.Component {
 	constructor(props) {
@@ -21,7 +22,7 @@ class ProductsSide extends React.Component {
 						<SortProducts />
 					</div>
 				</div>
-				<div>components cards wrap</div>
+				<PagesGridProducts />
 			</div>
 		);
 	}

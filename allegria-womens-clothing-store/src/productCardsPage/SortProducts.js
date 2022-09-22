@@ -13,7 +13,6 @@ function SortProducts() {
 					<option value="2">По убыванию цены</option>
 				</Form.Select>
 			</div>
-
 		</div>
 	);
 }

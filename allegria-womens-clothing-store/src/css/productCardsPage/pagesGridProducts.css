@@ -1,0 +1,17 @@
+.pages-grid-products{
+	text-align: center;
+}
+.pages-grid-products button{
+	background-color: #0F303F;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px 3px;
+	min-width: 213px;
+	font-weight: 600;
+	font-size: 1.17rem;
+}
+.pages-grid-products button:hover,
+.pages-grid-products button:focus{
+	background-color: #044360;
+	transition: all 0.3s ease-in-out;
+}
