@@ -3,6 +3,7 @@ import '../css/productCardsPage/productsSide.css';
 import SortProducts from './SortProducts';
 import ExtensionFilter from './ExtensionFilter';
 import PagesGridProducts from './PagesGridProducts';
+import stockCards from '../data/stockCards.json';
 
 class ProductsSide extends React.Component {
 	constructor(props) {
@@ -18,11 +19,11 @@ class ProductsSide extends React.Component {
 						<ExtensionFilter />
 					</div>
 					<div className='side-products__sort'>
-						<span>nnn товаров</span>
+						<span>{stockCards.length} товаров</span>
 						<SortProducts />
 					</div>
 				</div>
-				<PagesGridProducts />
+				<PagesGridProducts productCount={stockCards.length} />
 			</div>
 		);
 	}

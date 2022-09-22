@@ -11,7 +11,7 @@ class GridProducts extends React.Component {
 	render() {
 		let dataCard = stockCards;
 		let arrayLi = [];
-		for (let index = 0; index < dataCard.length; index++) {
+		for (let index = 0; index < dataCard.length && index < this.props.quantity; index++) {
 			const element = dataCard[index];
 			arrayLi.push(
 				<li key={index} className='grid-products__body-items'>
