@@ -74,3 +74,8 @@
 		width: 150px;
 	}
 }
+@media (max-width:916px){
+	.extension-filter__accordion-btn{
+		display: none;
+	}
+}

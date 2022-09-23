@@ -14,6 +14,53 @@
 	flex: 1 1 80%;
 	padding: 0px 10px;
 }
+.products__body-filter{
+	
+}
+
+.offcanvas-filter .offcanvas-header{
+	--bs-offcanvas-padding-y: 2.5rem;
+}
+.offcanvas-filter .offcanvas-title{
+	padding-left: 40%;
+	font-size: 1.28rem;
+}
+.offcanvas-filter .offcanvas-body{
+	--bs-offcanvas-padding-x: 3.5rem;
+	--bs-offcanvas-padding-y: 4rem;
+}
+.offcanvas-filter .filter .menu__navigate ul li {
+	padding: 0px 25px;
+}
+.offcanvas-filter .filter__accordions{
+	margin-top: 1rem;
+}
+.offcanvas-filter .extension-filter{
+	flex-direction: column;
+	justify-content: space-between;
+}
+.offcanvas-filter .extension-filter__accordion .accordion-item{
+	width: 100%;
+	border: none;
+}
+.offcanvas-filter .extension-filter__accordion .accordion-button{
+	font-weight: 800;
+	text-transform: uppercase;
+	justify-content: flex-start;
+	color: #081e28b9;
+}
+.offcanvas-filter .extension-filter__accordion .accordion{
+	--bs-accordion-btn-padding-x: 0rem;
+	--bs-accordion-btn-padding-y: 1rem;
+}
+.offcanvas-filter .extension-filter__accordion .accordion-body{
+	border-top: none;
+	--bs-accordion-body-padding-x: 0rem;
+}
+
+.offcanvas-filter .offcanvas, .offcanvas-top{
+	--bs-offcanvas-height: 90vh;
+}
 
 @media (max-width:1122px) {
 	.products__body{
