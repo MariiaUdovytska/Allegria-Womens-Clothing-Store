@@ -1,35 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../css/productCardsPage/productCardsPage.css';
 import FilterProdcts from './FilterProdcts';
 import ProductsSide from './ProductsSide';
-import ExtensionFilter from './ExtensionFilter';
-import { Button } from 'react-bootstrap';
-import { Offcanvas } from 'react-bootstrap';
-import { Accordion } from 'react-bootstrap';
-
-function OffCanvasExample({ name, ...props }) {
-	const [show, setShow] = useState(false);
-
-	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
-
-	return (
-		<>
-			<Button variant="primary" onClick={handleShow} className="me-2">
-				{name}
-			</Button>
-			<Offcanvas show={show} onHide={handleClose} {...props} className='offcanvas-filter'>
-				<Offcanvas.Header closeButton>
-					<Offcanvas.Title>Фильтр</Offcanvas.Title>
-				</Offcanvas.Header>
-				<Offcanvas.Body>
-					<FilterProdcts openAccordion={false} />
-					<ExtensionFilter />
-				</Offcanvas.Body>
-			</Offcanvas>
-		</>
-	);
-}
 
 class ProductCardsPage extends React.Component {
 	constructor(props) {
@@ -64,7 +36,6 @@ class ProductCardsPage extends React.Component {
 	}
 
 	render() {
-		// eslint-disable-next-line default-case
 		switch (this.state.sizeWidthType) {
 			case 'desktop': return (
 				<div className='products containerM'>
@@ -73,7 +44,7 @@ class ProductCardsPage extends React.Component {
 							<FilterProdcts openAccordion={true} />
 						</div>
 						<div className='products__body-sideproducts'>
-							<ProductsSide />
+							<ProductsSide sizeWidthType={this.state.sizeWidthType} />
 						</div>
 					</div>
 				</div>
@@ -82,30 +53,21 @@ class ProductCardsPage extends React.Component {
 				<div className='products containerM'>
 					<div className='products__body'>
 						<div className='products__body-filter'>
-							{['end'].map((placement, idx) => (
-								<OffCanvasExample key={idx} placement={placement} name={placement} />
-							))}
 						</div>
-						<div className='products__body-sideproducts'>
-							<ProductsSide />
-						</div>
+						<ProductsSide sizeWidthType={this.state.sizeWidthType} />
 					</div>
 				</div>
 			);
 			case 'phone': return (
 				<div className='products containerM'>
 					<div className='products__body'>
-						<div className='products__body-filter'>
-							{['top'].map((placement, idx) => (
-								<OffCanvasExample key={idx} placement={placement} name={placement} />
-							))}
-						</div>
 						<div className='products__body-sideproducts'>
-							<ProductsSide />
+							<ProductsSide sizeWidthType={this.state.sizeWidthType} />
 						</div>
 					</div>
 				</div>
 			);
+			default: return (<></>);
 		}
 	}
 }
