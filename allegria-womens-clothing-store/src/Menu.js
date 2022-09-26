@@ -17,7 +17,9 @@ class Menu extends React.Component {
 			menuDetales: false,
 			sizeWidthType: 'desktop',
 			openBurger: false,
-			show: false
+			show: false,
+			move: 0,
+			touchPosition: null
 		}
 	}
 	getWindowDimensions = () => {
@@ -43,6 +45,29 @@ class Menu extends React.Component {
 	componentWillUnmount() {
 		window.removeEventListener('resize', this.handleWindowDimensions);
 	}
+
+	topButtonClick = () => {
+		this.setState({ menuDetales: false, openBurger: false });
+	}
+
+	handleTouchStart = (e) => {
+		const touchDown = e.touches[0].clientY
+		this.setState({ touchPosition: touchDown });
+	}
+
+	handleTouchMove = (e) => {
+		const touchDown = this.state.touchPosition
+		if (touchDown === null) {
+			return
+		}
+		const currentTouch = e.touches[0].clientY
+		const diff = touchDown - currentTouch
+		if (diff > 5) {
+			this.topButtonClick()
+		}
+		this.setState({ touchPosition: null });
+	}
+
 	render() {
 		switch (this.state.sizeWidthType) {
 			case 'desktop': return (
@@ -87,7 +112,9 @@ class Menu extends React.Component {
 								<i className="bi bi-heart" style={{ fontSize: '19px' }}></i>
 								<i className="bi bi-bag" style={{ fontSize: '20px' }}></i>
 							</div>
-							<div className={((this.state.menuDetales === true) ? 'menu__detailed menu__detailed-active' : 'menu__detailed')}>
+							<div onTouchStart={this.handleTouchStart}
+								onTouchMove={this.handleTouchMove}
+								className={((this.state.menuDetales === true) ? 'menu__detailed menu__detailed-active' : 'menu__detailed')}>
 								<MenuDetailed openAccordion={true} />
 							</div>
 						</div>
@@ -125,7 +152,9 @@ class Menu extends React.Component {
 									}
 								</div>
 							</div>
-							<div className={((this.state.openBurger === true) ? 'menu__detailed menu__detailed-active' : 'menu__detailed')}>
+							<div onTouchStart={this.handleTouchStart}
+								onTouchMove={this.handleTouchMove}
+								className={((this.state.openBurger === true) ? 'menu__detailed menu__detailed-active' : 'menu__detailed')}>
 								<div className='menu__detailed-table'>
 									<nav className='menu__navigate'>
 										<ul>
@@ -192,7 +221,9 @@ class Menu extends React.Component {
 									}
 								</div>
 							</div>
-							<div className={((this.state.openBurger === true) ? 'menu__detailed menu__detailed-active' : 'menu__detailed')}>
+							<div onTouchStart={this.handleTouchStart}
+								onTouchMove={this.handleTouchMove}
+								className={((this.state.openBurger === true) ? 'menu__detailed menu__detailed-active' : 'menu__detailed')}>
 								<div className='menu__detailed-table'>
 									<nav className='menu__navigate'>
 										<ul>
