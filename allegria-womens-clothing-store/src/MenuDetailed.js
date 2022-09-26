@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/menuDetailed.css';
 import { Accordion } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function MenuDetailed(props) {
 	return (
@@ -11,8 +12,8 @@ function MenuDetailed(props) {
 						<Accordion.Item eventKey="0">
 							<Accordion.Header>ОДЕЖДА</Accordion.Header>
 							<Accordion.Body style={(props.openAccordion !== true) ? { 'text-align': 'center' } : {}}>
-								<ul>
-									<li>Свитшоты и худи</li>
+								<ul className='router-link'>
+									<Link to="/productCardsPage" ><li onClick={props.onHide}>Свитшоты и худи</li></Link>
 									<li>Платья юбки</li>
 									<li>Футболки и топы</li>
 									<li>Брюки и шорты</li>

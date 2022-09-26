@@ -102,7 +102,7 @@ class Menu extends React.Component {
 							<div className='menu__lang'>
 								<ul>
 									<li className='menu__lang-active'>ru</li>
-									<li className='router-link'><Link to="/productCardsPage">ua</Link></li>
+									<li>ua</li>
 									<li>en</li>
 								</ul>
 							</div>
@@ -115,7 +115,7 @@ class Menu extends React.Component {
 							<div onTouchStart={this.handleTouchStart}
 								onTouchMove={this.handleTouchMove}
 								className={((this.state.menuDetales === true) ? 'menu__detailed menu__detailed-active' : 'menu__detailed')}>
-								<MenuDetailed openAccordion={true} />
+								<MenuDetailed openAccordion={true} onHide={() => this.setState({ menuDetales: false })} />
 							</div>
 						</div>
 					</div>
@@ -171,12 +171,12 @@ class Menu extends React.Component {
 									<div className='menu__lang'>
 										<ul>
 											<li className='menu__lang-active'>ru</li>
-											<li className='router-link'><Link to="/productCardsPage">ua</Link></li>
+											<li>ua</li>
 											<li>en</li>
 										</ul>
 									</div>
 								</div>
-								<MenuDetailed openAccordion={false} />
+								<MenuDetailed openAccordion={false} onHide={() => this.setState({ openBurger: false })} />
 								<div className='menu-detailed__tablet-info'>
 									<ul>
 										<span>DEHA</span>
@@ -234,7 +234,7 @@ class Menu extends React.Component {
 										</ul>
 									</nav>
 								</div>
-								<MenuDetailed openAccordion={false} />
+								<MenuDetailed openAccordion={false} onHide={() => this.setState({ openBurger: false })} />
 								<div className='menu__langandinfo'>
 									<div className='menu__lang'>
 										<ul className='menu__lang-phone-ul'>
@@ -243,7 +243,7 @@ class Menu extends React.Component {
 												<input type='text'></input>
 											</li>
 											<li className='menu__lang-active'>ru</li>
-											<li className='router-link'><Link to="/productCardsPage">ua</Link></li>
+											<li>ua</li>
 											<li>en</li>
 										</ul>
 									</div>
