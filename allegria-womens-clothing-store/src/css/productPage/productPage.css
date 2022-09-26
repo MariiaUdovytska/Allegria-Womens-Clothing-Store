@@ -1,0 +1,18 @@
+.product-page{
+	max-width: 865px;
+	padding: 15px;
+	margin: 0px auto;
+}
+.product-page__body{
+	display: flex;
+	flex-direction: column;
+}
+.product-page__body .preview-popular{
+	max-width: unset;
+	margin: unset;
+	margin-top: 100px;
+	padding: 0;
+}
+.product-page__body .preview-popular__body h2{
+	margin-bottom: 40px;
+}

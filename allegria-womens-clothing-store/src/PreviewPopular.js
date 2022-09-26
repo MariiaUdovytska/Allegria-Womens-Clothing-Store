@@ -81,7 +81,7 @@ class PreviewPopular extends React.Component {
 		return (
 			<div className='preview-popular'>
 				<div className='preview-popular__body'>
-					<h2>Популярне</h2>
+					<h2>{this.props.swiperName}</h2>
 					<Swiper
 						slidesPerView={cardsNum}
 						spaceBetween={spaceBetween}

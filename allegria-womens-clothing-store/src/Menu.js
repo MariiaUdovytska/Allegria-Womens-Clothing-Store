@@ -102,7 +102,7 @@ class Menu extends React.Component {
 							<div className='menu__lang'>
 								<ul>
 									<li className='menu__lang-active'>ru</li>
-									<li>ua</li>
+									<li className='router-link'><Link to="/product">ua</Link></li>
 									<li>en</li>
 								</ul>
 							</div>
@@ -171,7 +171,7 @@ class Menu extends React.Component {
 									<div className='menu__lang'>
 										<ul>
 											<li className='menu__lang-active'>ru</li>
-											<li>ua</li>
+											<li className='router-link'><Link to="/product">ua</Link></li>
 											<li>en</li>
 										</ul>
 									</div>
@@ -243,7 +243,7 @@ class Menu extends React.Component {
 												<input type='text'></input>
 											</li>
 											<li className='menu__lang-active'>ru</li>
-											<li>ua</li>
+											<li className='router-link'><Link to="/product">ua</Link></li>
 											<li>en</li>
 										</ul>
 									</div>

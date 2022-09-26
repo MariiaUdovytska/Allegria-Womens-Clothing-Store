@@ -10,6 +10,7 @@ import ScrollToTop from './ScrollToTop';
 import BrandsPage from './brands/BrandsPage';
 import Registration from './singInRegistrationConfirmation/Registration';
 import ProductCardsPage from './productCardsPage/ProductCardsPage';
+import ProductPage from './productPage/ProductPage';
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 							<Route path="/brands" element={<BrandsPage />} exact />
 							<Route path="/registration" element={<Registration />} exact />
 							<Route path="/productCardsPage" element={<ProductCardsPage />} exact />
+							<Route path="/product" element={<ProductPage />} exact />
 						</Routes>
 					</main>
 					<Footer />
