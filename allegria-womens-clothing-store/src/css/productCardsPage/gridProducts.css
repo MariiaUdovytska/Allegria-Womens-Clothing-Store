@@ -22,3 +22,16 @@
 .grid-products__body-items .card__body-img{
 	height: 325px;
 }
+@media (max-width:768px) {
+	.grid-products__body-items .card__body-img{
+		height: 300px;
+	}
+}
+@media (max-width:554px) {
+	.grid-products__body-items{
+		flex: 1 1 50%;
+		min-width: 50%;
+		padding: 0px 8px;
+		margin-bottom: 40px;
+	}
+}
