@@ -17,12 +17,12 @@ function CardFull(props) {
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
 	return (
 		<div className='card-full'>
-			<div className='card-full__body'>
-				<div className='card-full__body-imgs'>
+			<div className='card-full__imgs'>
+				<div className='card-full__img-swipers'>
 					<Swiper
 						style={{
-							"--swiper-navigation-color": "#fff",
-							"--swiper-pagination-color": "#fff",
+							"--swiper-navigation-color": "#af3c2275",
+							"--swiper-pagination-color": "#af3c2275",
 						}}
 						loop={true}
 						spaceBetween={10}
@@ -32,13 +32,10 @@ function CardFull(props) {
 						className="mySwiper2"
 					>
 						<SwiperSlide>
-							<img src={image37} alt='clothing' />
+							<img src={image39} alt='clothing' />
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={image40} alt='clothing' />
-						</SwiperSlide>
-						<SwiperSlide>
-							<img src={image39} alt='clothing' />
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={image31} alt='clothing' />
@@ -46,29 +43,28 @@ function CardFull(props) {
 					</Swiper>
 					<Swiper
 						onSwiper={setThumbsSwiper}
-						loop={true}
+						loop={false}
 						spaceBetween={10}
-						slidesPerView={4}
+						slidesPerView={3}
 						freeMode={true}
 						watchSlidesProgress={true}
 						modules={[FreeMode, Navigation, Thumbs]}
 						className="mySwiper"
 					>
 						<SwiperSlide>
-							<img src={image37} alt='clothing' />
+							<img src={image39} alt='clothing' />
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={image40} alt='clothing' />
-						</SwiperSlide>
-						<SwiperSlide>
-							<img src={image39} alt='clothing' />
 						</SwiperSlide>
 						<SwiperSlide>
 							<img src={image31} alt='clothing' />
 						</SwiperSlide>
 					</Swiper>
 				</div>
-				<div className='card-full__body-info'></div>
+			</div>
+			<div className='card-full__info'>
+				<div>fdvjngrjnb kjnvoiewb</div>
 			</div>
 		</div>
 	);
