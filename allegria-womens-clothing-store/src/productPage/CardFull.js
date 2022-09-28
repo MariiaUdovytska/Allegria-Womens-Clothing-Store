@@ -64,7 +64,42 @@ function CardFull(props) {
 				</div>
 			</div>
 			<div className='card-full__info'>
-				<div>fdvjngrjnb kjnvoiewb</div>
+				<p className='card-full__info-name'>American vintage</p>
+				<p className='card-full__info-categories'>Classic shirt</p>
+				<p className='card-full__info-price'>3800 uah</p>
+				<p className='card-full__info-size'>
+					Размер
+					<ul>
+						<li>XS</li>
+						<li>s</li>
+						<li>m</li>
+						<li>l</li>
+						<li>xl</li>
+						<li>xp</li>
+					</ul>
+				</p>
+				<p className='card-full__info-tabletsize'>Таблица размеров</p>
+				<p className='card-full__info-color'>
+					Цвет
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</p>
+				<div className='card-full__info-btns'>
+					<button type='button'>добавить в корзину</button>
+					<button type='button'>купить в один клик</button>
+				</div>
+				<div className='card-full__info-dopinfo'>
+					<span>Оплата и доставка</span>
+					<span>Возврат и обмен</span>
+				</div>
+				<div className='card-full__info-info'>
+					<p>ИНФОРМАЦИЯ О ТОВАРЕ</p>
+					<p>Lorem lorem Lorem ipsum<br></br>Lorem lorem Lorem ipsum</p>
+				</div>
 			</div>
 		</div>
 	);
