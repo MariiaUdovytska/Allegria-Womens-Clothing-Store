@@ -16,3 +16,11 @@
 .product-page__body .preview-popular__body h2{
 	margin-bottom: 40px;
 }
+@media (max-width:519px) {
+	.product-page{
+		padding: 0;
+	}
+	.product-page__body .preview-popular{
+		padding: 0px 15px;
+	}
+}
