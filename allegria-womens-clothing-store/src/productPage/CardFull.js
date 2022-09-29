@@ -50,17 +50,22 @@ function CardFull(props) {
 							className="mySwiper2"
 						>
 							<SwiperSlide>
-								<img src={image39} alt='clothing' />
+								<img src={element.image} alt='clothing' />
 								<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
 								<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
 							</SwiperSlide>
 							<SwiperSlide>
-								<img src={image40} alt='clothing' />
+								<img src={element.image2} alt='clothing' />
 								<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
 								<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
 							</SwiperSlide>
 							<SwiperSlide>
-								<img src={image31} alt='clothing' />
+								<img src={element.image3} alt='clothing' />
+								<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
+								<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
+							</SwiperSlide>
+							<SwiperSlide>
+								<img src={element.image4} alt='clothing' />
 								<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
 								<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
 							</SwiperSlide>
@@ -76,13 +81,16 @@ function CardFull(props) {
 							className="mySwiper"
 						>
 							<SwiperSlide>
-								<img src={image39} alt='clothing' />
+								<img src={element.image} alt='clothing' />
 							</SwiperSlide>
 							<SwiperSlide>
-								<img src={image40} alt='clothing' />
+								<img src={element.image2} alt='clothing' />
 							</SwiperSlide>
 							<SwiperSlide>
-								<img src={image31} alt='clothing' />
+								<img src={element.image3} alt='clothing' />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img src={element.image4} alt='clothing' />
 							</SwiperSlide>
 						</Swiper>
 					</div>
