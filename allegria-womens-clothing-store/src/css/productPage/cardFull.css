@@ -1,3 +1,6 @@
+.not-faund{
+	padding-top: 45px;
+}
 .card-full{
 	display: flex;
 	flex-direction: row;
@@ -101,6 +104,20 @@
 	font-size: 1.28rem;
 	text-transform: uppercase;
 }
+.card-full__info-instock{
+	display: flex;
+	flex-direction: column;
+	font-size: 0.85rem;
+	opacity: 0.7;
+}
+.card-full__info-havnot{
+	color: #cb4444;
+}
+.card-full__info-reportadmission{
+	margin-bottom: 10px;
+	cursor: pointer;
+	text-decoration-line: underline;
+}
 .card-full__info-size{
 	font-size: 0.86rem;
 	margin-bottom: -1rem;
@@ -176,6 +193,7 @@
 }
 .card-full__info-btns button:nth-child(odd){
 	background-color: unset;
+	color: #0F303F;
 	border: 1px solid #0F303F;
 }
 .card-full__info-btns button:nth-child(odd):hover{
@@ -263,6 +281,10 @@
 		margin-top: -14px;
 		background-color: #CECECE;
 	}
+	.card-full__info-instock{
+		text-align: center;
+	}
+
 	.card-full__imgs-tablet .swiper{
 		padding-top: 0;
 	}

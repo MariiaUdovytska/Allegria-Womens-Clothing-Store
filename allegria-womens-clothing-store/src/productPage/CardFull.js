@@ -8,6 +8,8 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import stockCards from '../data/stockCards.json';
+import { useSearchParams } from 'react-router-dom';
 import { FreeMode, Navigation, Thumbs, EffectCoverflow, Pagination } from "swiper";
 
 import image37 from '../image/products/image37.png';
@@ -18,7 +20,18 @@ import SwiperTablet from './SwiperTablet';
 
 
 function CardFull(props) {
+	const [searchParams] = useSearchParams();
+	let id = searchParams.get('id');
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
+	const element = stockCards[id];
+	if (element === undefined) {
+		return (
+			<div className='not-faund containerM'>{`Товар с Id:${id} не найден`}</div>
+		)
+	}
+
+	let showPrice = element.price !== undefined;
+
 	if (props.sizeWidthType == 'desktop') {
 		return (
 			<div className='card-full'>
@@ -75,10 +88,16 @@ function CardFull(props) {
 					</div>
 				</div>
 				<div className='card-full__info'>
-					<p className='card-full__info-name'>American vintage</p>
-					<p className='card-full__info-categories'>Classic shirt</p>
-					<p className='card-full__info-price'>3800 uah</p>
-					<p className='card-full__info-size'>
+					<p className='card-full__info-name'>{element.name}</p>
+					<p className='card-full__info-categories'>{element.categories}</p>
+					{showPrice === true
+						? <p className='card-full__info-price'>{element.price}</p>
+						: <div className='card-full__info-instock'>
+							<span className='card-full__info-havnot'>нет в наличии</span>
+							<span className='card-full__info-reportadmission'>Сообщить о поступлении</span>
+						</div>
+					}
+					<div className='card-full__info-size'>
 						Размер
 						<ul>
 							<li>XS</li>
@@ -88,9 +107,9 @@ function CardFull(props) {
 							<li>xl</li>
 							<li>xp</li>
 						</ul>
-					</p>
+					</div>
 					<p className='card-full__info-tabletsize'>Таблица размеров</p>
-					<p className='card-full__info-color'>
+					<div className='card-full__info-color'>
 						Цвет
 						<ul>
 							<li></li>
@@ -98,7 +117,7 @@ function CardFull(props) {
 							<li></li>
 							<li></li>
 						</ul>
-					</p>
+					</div>
 					<div className='card-full__info-btns'>
 						<button type='button'>добавить в корзину</button>
 						<button type='button'>купить в один клик</button>
@@ -118,12 +137,18 @@ function CardFull(props) {
 		return (
 			<div className='card-full'>
 				<div className='card-full__info'>
-					<p className='card-full__info-name'>American vintage</p>
-					<p className='card-full__info-categories'>Classic shirt</p>
-					<div className='card-full__info-price'>
-						<div className='card-full__info-price-old'><span>5200 uah</span></div>
-						<div className='card-full__info-price-now'><span>3800 uah</span></div>
-					</div>
+					<p className='card-full__info-name'>{element.name}</p>
+					<p className='card-full__info-categories'>{element.categories}</p>
+					{showPrice === true
+						? <div className='card-full__info-price'>
+							<div className='card-full__info-price-old'><span>{element.oldPrice}</span></div>
+							<div className='card-full__info-price-now'><span>{element.price}</span></div>
+						</div>
+						: <div className='card-full__info-instock'>
+							<span className='card-full__info-havnot'>нет в наличии</span>
+							<span className='card-full__info-reportadmission'>Сообщить о поступлении</span>
+						</div>
+					}
 				</div>
 				<div className='card-full__imgs'>
 					<div className='card-full__imgs-tablet'>
@@ -131,7 +156,7 @@ function CardFull(props) {
 					</div>
 				</div>
 				<div className='card-full__info'>
-					<p className='card-full__info-size'>
+					<div className='card-full__info-size'>
 						Размер
 						<ul>
 							<li>XS</li>
@@ -141,9 +166,9 @@ function CardFull(props) {
 							<li>xl</li>
 							<li>xp</li>
 						</ul>
-					</p>
+					</div>
 					<p className='card-full__info-tabletsize'>Таблица размеров</p>
-					<p className='card-full__info-color'>
+					<div className='card-full__info-color'>
 						Цвет
 						<ul>
 							<li></li>
@@ -151,7 +176,7 @@ function CardFull(props) {
 							<li></li>
 							<li></li>
 						</ul>
-					</p>
+					</div>
 					<div className='card-full__info-btns'>
 						<button type='button'>добавить в корзину</button>
 						<button type='button'>купить в один клик</button>
