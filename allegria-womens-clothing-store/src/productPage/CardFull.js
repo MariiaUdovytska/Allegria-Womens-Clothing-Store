@@ -10,12 +10,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import stockCards from '../data/stockCards.json';
 import { useSearchParams } from 'react-router-dom';
-import { FreeMode, Navigation, Thumbs, EffectCoverflow, Pagination } from "swiper";
-
-import image37 from '../image/products/image37.png';
-import image39 from '../image/products/image39.png';
-import image40 from '../image/products/image40.png';
-import image31 from '../image/products/image31.png';
+import { FreeMode, Navigation, Thumbs } from "swiper";
 import SwiperTablet from './SwiperTablet';
 
 

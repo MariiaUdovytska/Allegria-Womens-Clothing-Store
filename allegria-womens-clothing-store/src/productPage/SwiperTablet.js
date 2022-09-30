@@ -7,12 +7,17 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 import { EffectCoverflow, Pagination } from "swiper";
+import stockCards from '../data/stockCards.json';
+import { useSearchParams } from 'react-router-dom';
 
 import image39 from '../image/products/image39.png';
 import image40 from '../image/products/image40.png';
 import image31 from '../image/products/image31.png';
 
 export default function SwiperTablet() {
+	const [searchParams] = useSearchParams();
+	let id = searchParams.get('id');
+	const element = stockCards[id];
 	return (
 		<>
 			<Swiper
@@ -32,17 +37,22 @@ export default function SwiperTablet() {
 				className="mySwiper"
 			>
 				<SwiperSlide>
-					<img src={image39} alt='clothing' />
+					<img src={element.image} alt='clothing' />
 					<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
 					<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={image40} alt='clothing' />
+					<img src={element.image2} alt='clothing' />
 					<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
 					<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={image31} alt='clothing' />
+					<img src={element.image3} alt='clothing' />
+					<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
+					<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<img src={element.image4} alt='clothing' />
 					<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
 					<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
 				</SwiperSlide>
