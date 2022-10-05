@@ -10,10 +10,6 @@ import { EffectCoverflow, Pagination } from "swiper";
 import stockCards from '../data/stockCards.json';
 import { useSearchParams } from 'react-router-dom';
 
-import image39 from '../image/products/image39.png';
-import image40 from '../image/products/image40.png';
-import image31 from '../image/products/image31.png';
-
 export default function SwiperTablet() {
 	const [searchParams] = useSearchParams();
 	let id = searchParams.get('id');

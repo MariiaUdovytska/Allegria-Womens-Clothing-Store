@@ -1,0 +1,26 @@
+.modal__form-payment{
+	text-align: left;
+	padding: 0px 25px;
+	padding-bottom: 20px;
+}
+.modal-payment .modal-header{
+	padding-left: 38px;
+}
+.modal-payment .modal-header,
+.modal__form-payment h3{
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+.modal__form-payment h3{
+	margin-bottom: 15px;
+}
+.modal__form-payment h4{
+	font-size: 1rem;
+	font-weight: 800;
+	margin-bottom: 11px;
+}
+.modal__form-payment p{
+	font-size: 1rem;
+	opacity: 0.7;
+}
