@@ -3,7 +3,6 @@ import React from 'react';
 import '../css/productPage/productPage.css';
 import PreviewPopular from '../PreviewPopular';
 import CardFull from './CardFull';
-import ModalPayment from './ModalPayment';
 
 class ProductPage extends React.Component {
 	constructor(props) {
@@ -39,7 +38,6 @@ class ProductPage extends React.Component {
 				<div className='product-page__body'>
 					<CardFull sizeWidthType={this.state.sizeWidthType} />
 					<PreviewPopular swiperName={'Похожие товары'} />
-					<ModalPayment show={true} />
 				</div>
 			</div>
 		);

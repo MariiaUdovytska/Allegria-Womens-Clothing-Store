@@ -4,7 +4,6 @@ import { Modal } from 'react-bootstrap';
 
 function ModalPayment(props) {
 	return (
-
 		<Modal
 			{...props}
 			size="lg"
@@ -29,8 +28,6 @@ function ModalPayment(props) {
 				</div>
 			</Modal.Body>
 		</Modal>
-
-
 	);
 }
 export default ModalPayment;

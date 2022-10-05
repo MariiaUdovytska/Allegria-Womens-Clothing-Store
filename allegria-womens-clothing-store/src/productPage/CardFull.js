@@ -12,9 +12,14 @@ import stockCards from '../data/stockCards.json';
 import { useSearchParams } from 'react-router-dom';
 import { FreeMode, Navigation, Thumbs } from "swiper";
 import SwiperTablet from './SwiperTablet';
+import ModalPayment from './ModalPayment';
+import ModalReturn from './ModalReturn';
 
 
 function CardFull(props) {
+	const [showPayment, setShowPayment] = useState(false);
+	const [showReturn, setShowReturn] = useState(false);
+
 	const [searchParams] = useSearchParams();
 	let id = searchParams.get('id');
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -126,8 +131,10 @@ function CardFull(props) {
 						<button type='button'>купить в один клик</button>
 					</div>
 					<div className='card-full__info-dopinfo'>
-						<span>Оплата и доставка</span>
-						<span>Возврат и обмен</span>
+						<span onClick={() => setShowPayment(true)}>Оплата и доставка</span>
+						<ModalPayment show={showPayment} onHide={() => setShowPayment(false)} />
+						<span onClick={() => setShowReturn(true)}>Возврат и обмен</span>
+						<ModalReturn show={showReturn} onHide={() => setShowReturn(false)} />
 					</div>
 					<div className='card-full__info-info'>
 						<span>ИНФОРМАЦИЯ О ТОВАРЕ</span>
@@ -185,8 +192,10 @@ function CardFull(props) {
 						<button type='button'>купить в один клик</button>
 					</div>
 					<div className='card-full__info-dopinfo'>
-						<span>Оплата и доставка</span>
-						<span>Возврат и обмен</span>
+						<span onClick={() => setShowPayment(true)}>Оплата и доставка</span>
+						<ModalPayment show={showPayment} onHide={() => setShowPayment(false)} />
+						<span onClick={() => setShowReturn(true)}>Возврат и обмен</span>
+						<ModalReturn show={showReturn} onHide={() => setShowReturn(false)} />
 					</div>
 					<div className='card-full__info-info'>
 						<span>ИНФОРМАЦИЯ О ТОВАРЕ</span>
