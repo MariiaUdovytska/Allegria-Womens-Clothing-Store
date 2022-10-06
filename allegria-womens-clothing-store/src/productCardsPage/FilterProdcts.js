@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/productCardsPage/filterProdcts.css';
-// import '../css/menuDetailed.css';
 import { Accordion } from 'react-bootstrap';
 
 function FilterProdcts(props) {

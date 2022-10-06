@@ -17,8 +17,7 @@ function Footer() {
 					<nav className='footer__body-navigation'>
 						<ul>
 							<li className='router-link'><Link to="/about">О&nbsp;нас</Link></li>
-							{/* <li className='router-link'>О&nbsp;нас</li> */}
-							<li>Распространенные вопросы</li>
+							<li className='router-link'><Link to="/questionPage">Распространенные вопросы</Link></li>
 							<li className='router-link'> <Link to="/brands">Бренды</Link></li>
 						</ul>
 					</nav>

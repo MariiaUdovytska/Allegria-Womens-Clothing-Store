@@ -11,16 +11,12 @@ import BrandsPage from './brands/BrandsPage';
 import Registration from './singInRegistrationConfirmation/Registration';
 import ProductCardsPage from './productCardsPage/ProductCardsPage';
 import ProductPage from './productPage/ProductPage';
+import QuestionPage from './question/QuestionPage';
 
 function App() {
 	return (
 		<div className='wrapper'>
 			<div className='page'>
-				{/* <Menu />
-				<main className='main'>
-					<About />
-				</main>
-				<Footer /> */}
 				<BrowserRouter> {/*<BrowserRouter basename="/Allegria-Womens-Clothing-Store">*/}
 					<ScrollToTop />
 					<Menu />
@@ -33,6 +29,7 @@ function App() {
 							<Route path="/registration" element={<Registration />} exact />
 							<Route path="/productCardsPage" element={<ProductCardsPage />} exact />
 							<Route path="/product" element={<ProductPage />} exact />
+							<Route path="/questionPage" element={<QuestionPage />} exact />
 						</Routes>
 					</main>
 					<Footer />
