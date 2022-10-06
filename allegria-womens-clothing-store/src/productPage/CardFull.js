@@ -32,6 +32,14 @@ function CardFull(props) {
 
 	let showPrice = element.price !== undefined;
 
+	let arrayLi = [];
+	let sizes = ["xs", "s", "m", "l", "xl", "XP"];
+	for (let index = 0; index < sizes.length; index++) {
+		arrayLi.push(
+			<li key={index} className={(element.size.includes(sizes[index])) ? "" : "card-full__info-size-disabled"}>{sizes[index]}</li>
+		);
+	}
+
 	if (props.sizeWidthType == 'desktop') {
 		return (
 			<div className='card-full'>
@@ -108,12 +116,7 @@ function CardFull(props) {
 					<div className='card-full__info-size'>
 						Размер
 						<ul>
-							<li>XS</li>
-							<li>s</li>
-							<li>m</li>
-							<li>l</li>
-							<li>xl</li>
-							<li>xp</li>
+							{arrayLi}
 						</ul>
 					</div>
 					<p className='card-full__info-tabletsize'>Таблица размеров</p>

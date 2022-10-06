@@ -11,7 +11,7 @@ function ProductsSide(props) {
 	switch (props.sizeWidthType) {
 		case 'desktop': return (
 			<div className='side-products'>
-				<h1>name category</h1>
+				<h1>Свитшоты и худи</h1>
 				<div className='side-products-filt'>
 					<div className='side-products__filter'>
 						<ExtensionFilter />

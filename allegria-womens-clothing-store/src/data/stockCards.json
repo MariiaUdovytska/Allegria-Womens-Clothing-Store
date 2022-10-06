@@ -11,7 +11,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l","xl","XP"]
 	},
 	{
 		"id":1,
@@ -25,7 +26,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","xl"]
 	},
 	{
 		"id":2,
@@ -41,7 +43,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","l"]
 	},
 	{
 		"id":3,
@@ -55,7 +58,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["m","l","xl","XP"]
 	},
 	{
 		"id":4,
@@ -71,7 +75,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l","xl","XP"]
 	},
 	{
 		"id":5,
@@ -87,7 +92,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","m","l","xl"]
 	},
 	{
 		"id":6,
@@ -101,7 +107,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l","xl","XP"]
 	},
 	{
 		"id":7,
@@ -117,7 +124,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l","xl","XP"]
 	},
 	{
 		"id":8,
@@ -131,7 +139,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["l","xl","XP"]
 	},
 	{
 		"id":9,
@@ -147,7 +156,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["s","m","l","xl","XP"]
 	},
 	{
 		"id":10,
@@ -163,7 +173,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l","xl"]
 	},
 	{
 		"id":11,
@@ -177,7 +188,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l"]
 	},
 	{
 		"id":12,
@@ -191,7 +203,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","l","xl","XP"]
 	},
 	{
 		"id":13,
@@ -207,7 +220,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["s","m","l","xl","XP"]
 	},
 	{
 		"id":14,
@@ -221,7 +235,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l"]
 	},
 	{
 		"id":15,
@@ -235,7 +250,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","xl"]
 	},
 	{
 		"id":16,
@@ -251,7 +267,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l","xl"]
 	},
 	{
 		"id":17,
@@ -265,7 +282,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l","XP"]
 	},
 	{
 		"id":18,
@@ -281,7 +299,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l"]
 	},
 	{
 		"id":19,
@@ -297,7 +316,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","l","xl","XP"]
 	},
 	{
 		"id":20,
@@ -311,7 +331,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["s","m","l"]
 	},
 	{
 		"id":21,
@@ -325,7 +346,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","l","xl"]
 	},
 	{
 		"id":22,
@@ -339,7 +361,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","XP"]
 	},
 	{
 		"id":23,
@@ -355,7 +378,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["s","m","l","xl","XP"]
 	},
 	{
 		"id":24,
@@ -371,7 +395,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m"]
 	},
 	{
 		"id":25,
@@ -385,7 +410,8 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["m","l","xl","XP"]
 	},
 	{
 		"id":26,
@@ -399,6 +425,7 @@
 		"cod":"",
 		"color":"yellow",
 		"position":"respect",
-		"presence":"В наличии"
+		"presence":"В наличии",
+		"size":["xs","s","m","xl","XP"]
 	}
 ]

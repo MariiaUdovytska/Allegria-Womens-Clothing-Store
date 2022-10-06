@@ -145,6 +145,10 @@
 	border: 1px solid #0F303F;
 	transition: all 0.3s ease-in-out;
 }
+.card-full__info-size-disabled{
+	background-color: #EAE9E8;
+	color: #CEC6C4;
+}
 .card-full__info-tabletsize{
 	font-size: 0.86rem;
 	text-decoration-line: underline;
