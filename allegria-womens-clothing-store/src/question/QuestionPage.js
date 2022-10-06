@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/question/questionPage.css';
 import { Accordion } from 'react-bootstrap';
+import FormWriteQuestion from './FormWriteQuestion';
 
 function QuestionPage() {
 	return (
@@ -102,7 +103,9 @@ function QuestionPage() {
 						</Accordion>
 					</div>
 				</div>
-				<div className='question__body-write'>test write</div>
+				<div className='question__body-write'>
+					<FormWriteQuestion />
+				</div>
 			</div>
 		</div>
 	);
