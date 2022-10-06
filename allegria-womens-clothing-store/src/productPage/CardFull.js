@@ -172,12 +172,7 @@ function CardFull(props) {
 					<div className='card-full__info-size'>
 						Размер
 						<ul>
-							<li>XS</li>
-							<li>s</li>
-							<li>m</li>
-							<li>l</li>
-							<li>xl</li>
-							<li>xp</li>
+							{arrayLi}
 						</ul>
 					</div>
 					<p className='card-full__info-tabletsize'>Таблица размеров</p>
