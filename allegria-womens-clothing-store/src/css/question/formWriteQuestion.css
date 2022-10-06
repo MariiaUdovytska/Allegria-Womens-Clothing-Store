@@ -18,6 +18,7 @@
 	background-color: transparent;
 	color: #212529;
 	margin-bottom: 10px;
+	border-radius: 0rem;
 }
 .question-write__body .form-control{
 	border: none;
@@ -79,4 +80,9 @@
 .question-write__body button:hover{
 	background-color: #eb4f2cb6;
 	transition: all 0.4s;
+}
+@media (max-width:825px) {
+	.question-write__body{
+		padding: 30px 20px;
+	}
 }
