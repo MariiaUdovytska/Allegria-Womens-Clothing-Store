@@ -43,10 +43,11 @@
 	border: none;
 }
 .offcanvas-filter .extension-filter__accordion .accordion-button{
-	font-weight: 800;
+	font-weight: 700;
 	text-transform: uppercase;
-	justify-content: flex-start;
-	color: #081e28b9;
+	justify-content: space-between;
+	/* color: #081e28b9; */
+	opacity: 0.6;
 }
 .offcanvas-filter .extension-filter__accordion .accordion{
 	--bs-accordion-btn-padding-x: 0rem;

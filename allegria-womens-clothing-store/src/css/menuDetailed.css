@@ -33,6 +33,9 @@
 	padding: 0px 40px;
 }
 
+.menu-detailed__accordion{
+	width: 100%;
+}
 .menu-detailed__accordion .accordion-button{
 	background-color: unset;
 	font-weight: 600;

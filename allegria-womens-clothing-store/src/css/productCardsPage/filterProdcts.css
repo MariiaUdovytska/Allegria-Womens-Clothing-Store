@@ -11,7 +11,7 @@
 	letter-spacing: 0.2rem;
 }
 .filter__accordion .accordion-button{
-	justify-content: flex-start;
+	justify-content: space-between;
 
 }
 .filter__accordion .accordion{

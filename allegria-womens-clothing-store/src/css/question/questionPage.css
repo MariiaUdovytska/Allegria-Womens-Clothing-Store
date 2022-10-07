@@ -63,6 +63,7 @@
 	.question__body-reed{
 		max-width: 500px;
 		margin: 0px auto;
+		width: 100%;
 	}
 	.question__body-write{
 		max-width: 340px;
