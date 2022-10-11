@@ -102,14 +102,14 @@ class Menu extends React.Component {
 							<div className='menu__lang'>
 								<ul>
 									<li className='menu__lang-active'>ru</li>
-									<li className='router-link'><Link to="/wishlist">ua</Link></li>
+									<li >ua</li>
 									<li>en</li>
 								</ul>
 							</div>
-							<div className='menu__icons'>
+							<div className='menu__icons router-link'>
 								<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 								<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
-								<i className="bi bi-heart" style={{ fontSize: '19px' }}></i>
+								<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }}></i></Link>
 								<i className="bi bi-bag" style={{ fontSize: '20px' }}></i>
 							</div>
 							<div onTouchStart={this.handleTouchStart}
@@ -138,10 +138,10 @@ class Menu extends React.Component {
 								</Link>
 							</div>
 							<div className='menu__phone-right'>
-								<div className='menu__icons'>
+								<div className='menu__icons router-link'>
 									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
-									<i className="bi bi-heart" style={{ fontSize: '19px' }}></i>
+									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }}></i></Link>
 									<i className="bi bi-bag" style={{ fontSize: '20px' }}></i>
 								</div>
 								<div className='menu__burger' onClick={() => this.setState({ openBurger: !this.state.openBurger })}>
@@ -171,7 +171,7 @@ class Menu extends React.Component {
 									<div className='menu__lang'>
 										<ul>
 											<li className='menu__lang-active'>ru</li>
-											<li className='router-link'><Link to="/wishlist">ua</Link></li>
+											<li>ua</li>
 											<li>en</li>
 										</ul>
 									</div>
@@ -207,10 +207,10 @@ class Menu extends React.Component {
 								</Link>
 							</div>
 							<div className='menu__phone-right'>
-								<div className='menu__icons'>
+								<div className='menu__icons router-link'>
 									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
-									<i className="bi bi-heart" style={{ fontSize: '19px' }}></i>
+									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }}></i></Link>
 									<i className="bi bi-bag" style={{ fontSize: '20px' }}></i>
 								</div>
 								<div className='menu__burger' onClick={() => this.setState({ openBurger: !this.state.openBurger })}>
@@ -243,7 +243,7 @@ class Menu extends React.Component {
 												<input type='text'></input>
 											</li>
 											<li className='menu__lang-active'>ru</li>
-											<li className='router-link'><Link to="/wishlist">ua</Link></li>
+											<li>ua</li>
 											<li>en</li>
 										</ul>
 									</div>

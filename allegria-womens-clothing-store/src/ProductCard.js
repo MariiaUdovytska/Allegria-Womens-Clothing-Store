@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import './css/productCard.css';
 import { Link } from 'react-router-dom';
 
