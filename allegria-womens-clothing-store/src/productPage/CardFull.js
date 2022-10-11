@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import '../css/productPage/cardFull.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,19 +15,49 @@ import SwiperTablet from './SwiperTablet';
 import ModalPayment from './ModalPayment';
 import ModalReturn from './ModalReturn';
 
+function getIds() {
+	let idsArray = localStorage.getItem("idsWishlist");
+	if (idsArray == null)
+		idsArray = [];
+	else
+		idsArray = JSON.parse(idsArray);
+	return idsArray;
+}
+
+function arrayRemove(arr, value) {
+	return arr.filter(function (element) {
+		return element != value;
+	});
+}
 
 function CardFull(props) {
 	const [showPayment, setShowPayment] = useState(false);
 	const [showReturn, setShowReturn] = useState(false);
 
+
 	const [searchParams] = useSearchParams();
-	let id = searchParams.get('id');
+	let id = searchParams.get('id') * 1;
+	let ids = getIds();
+	const [liked, setLiked] = useState(ids.includes(id));
 	const [thumbsSwiper, setThumbsSwiper] = useState(null);
 	const element = stockCards[id];
 	if (element === undefined) {
 		return (
 			<div className='not-faund containerM'>{`Товар с Id:${id} не найден`}</div>
 		)
+	}
+
+	let handleClickLike = () => {
+		let ids_l = getIds();
+
+		if (liked === false) {
+			ids_l.push(id);
+		} else {
+			ids_l = arrayRemove(ids_l, id)
+		}
+
+		setLiked(!liked);
+		localStorage.setItem("idsWishlist", JSON.stringify(ids_l));
 	}
 
 	let showPrice = element.price !== undefined;
@@ -59,23 +89,55 @@ function CardFull(props) {
 						>
 							<SwiperSlide>
 								<img src={element.image} alt='clothing' />
-								<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
-								<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
+								<div onClick={() => handleClickLike()} className='card__body-icons'>
+									{liked === true
+										? <div className='card__body-up-like'>
+											<i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i>
+										</div>
+										: <div className='card__body-up-like'>
+											<i className='bi bi-heart' style={{ fontSize: '16px' }}></i>
+										</div>
+									}
+								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<img src={element.image2} alt='clothing' />
-								<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
-								<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
+								<div onClick={() => handleClickLike()} className='card__body-icons'>
+									{liked === true
+										? <div className='card__body-up-like'>
+											<i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i>
+										</div>
+										: <div className='card__body-up-like'>
+											<i className='bi bi-heart' style={{ fontSize: '16px' }}></i>
+										</div>
+									}
+								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<img src={element.image3} alt='clothing' />
-								<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
-								<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
+								<div onClick={() => handleClickLike()} className='card__body-icons'>
+									{liked === true
+										? <div className='card__body-up-like'>
+											<i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i>
+										</div>
+										: <div className='card__body-up-like'>
+											<i className='bi bi-heart' style={{ fontSize: '16px' }}></i>
+										</div>
+									}
+								</div>
 							</SwiperSlide>
 							<SwiperSlide>
 								<img src={element.image4} alt='clothing' />
-								<div className='card__body-up-like'><i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
-								<div className='card__body-up-like dopempty'><i className='bi bi-heart' style={{ fontSize: '16px' }}></i></div>
+								<div onClick={() => handleClickLike()} className='card__body-icons'>
+									{liked === true
+										? <div className='card__body-up-like'>
+											<i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i>
+										</div>
+										: <div className='card__body-up-like'>
+											<i className='bi bi-heart' style={{ fontSize: '16px' }}></i>
+										</div>
+									}
+								</div>
 							</SwiperSlide>
 						</Swiper>
 						<Swiper
@@ -165,7 +227,7 @@ function CardFull(props) {
 				</div>
 				<div className='card-full__imgs'>
 					<div className='card-full__imgs-tablet'>
-						<SwiperTablet />
+						<SwiperTablet id={id} />
 					</div>
 				</div>
 				<div className='card-full__info'>
