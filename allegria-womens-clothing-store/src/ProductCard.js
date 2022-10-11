@@ -2,14 +2,40 @@ import React, { useRef, useState } from 'react';
 import './css/productCard.css';
 import { Link } from 'react-router-dom';
 
+function getIds() {
+	let idsArray = localStorage.getItem("idsWishlist");
+	if (idsArray == null)
+		idsArray = [];
+	else
+		idsArray = JSON.parse(idsArray);
+	return idsArray;
+}
+
+function arrayRemove(arr, value) {
+	return arr.filter(function (element) {
+		return element != value;
+	});
+}
+
 function ProductCard(props) {
 	let showBusket = props.price !== undefined;
 	let showSale = props.sale !== undefined;
 
-	const [liked, setLiked] = useState(false);
+	let ids = getIds();
+	const [liked, setLiked] = useState(ids.includes(props.id));
+
 
 	let handleClickLike = () => {
-		setLiked(true);
+		let ids_l = getIds();
+
+		if (liked === false) {
+			ids_l.push(props.id);
+		} else {
+			ids_l = arrayRemove(ids_l, props.id)
+		}
+
+		setLiked(!liked);
+		localStorage.setItem("idsWishlist", JSON.stringify(ids_l));
 	}
 
 	let link = `/product?id=${props.id}`;
