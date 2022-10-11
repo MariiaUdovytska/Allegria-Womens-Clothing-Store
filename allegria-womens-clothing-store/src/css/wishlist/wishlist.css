@@ -93,16 +93,60 @@
 	cursor: pointer;
 	text-decoration-line: underline;
 }
-
 .wishlist__body-cards-info-right-btn{
 	border: 1px solid #0F303F;
 	text-transform: uppercase;
 	background-color: transparent;
 	padding: 14px 3px;
 	text-align: center;
+	color: #0F303F;
+	opacity: 0.9;
 }
 .wishlist__body-cards-info-right-btn:hover{
 	background-color: #0f303fc0;
 	color: #fff;
 	transition: all 0.5s;
+}
+@media (max-width:793px) {
+	.wishlist__body-cards{
+		padding: 40px 20px;
+	}
+	.wishlist__body-cards-info{
+		margin: 0px -8px;
+	}
+	.wishlist__body-cards-info-img{
+		padding: 0px 8px;
+	}
+	.wishlist__body-cards-info-right{
+		padding: 12px 8px;
+	}
+	.wishlist__body-cards-info-right-name{
+		font-size: 1.14rem;
+	}
+	.wishlist__body-cards-info-right-categories{
+		font-size: 1rem;
+	}
+}
+@media (max-width:686px){
+	.wishlist__body-cards{
+		width: 100%;
+	}
+	.wishlist__body-cards{
+		padding: 40px 40px;
+	}
+}
+@media (max-width:451px){
+	.wishlist{
+		padding: 0px;
+	}
+	.wishlist__body-cards{
+		padding: 40px 20px;
+		border: none;
+		border-bottom: 1px solid #EAE9E8;
+	}
+}
+@media (max-width:331px){
+	.wishlist__body-cards-info-right-btn{
+		font-size: 0.9rem;
+	}
 }
