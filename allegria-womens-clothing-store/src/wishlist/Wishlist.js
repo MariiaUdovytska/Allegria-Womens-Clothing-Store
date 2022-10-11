@@ -1,18 +1,42 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import '../css/wishlist/wishlist.css';
 import stockCards from '../data/stockCards.json';
+
+function getIds() {
+	let idsArray = localStorage.getItem("idsWishlist");
+	if (idsArray == null)
+		idsArray = [];
+	else
+		idsArray = JSON.parse(idsArray);
+	return idsArray;
+}
+
+function arrayRemove(arr, value) {
+	return arr.filter(function (element) {
+		return element != value;
+	});
+}
 
 function Wishlist(props) {
 	let dataCardWishlist = stockCards;
 	let arrayCardsDiv = [];
+	const [ids, setIds] = useState(getIds());
 
-	for (let index = 0; index < dataCardWishlist.length; index++) {
-		const element = dataCardWishlist[index];
+	let handleClickDelete = (id) => {
+		let ids_l = getIds();
+		ids_l = arrayRemove(ids_l, id);
+		localStorage.setItem("idsWishlist", JSON.stringify(ids_l));
+		setIds(ids_l);
+	}
+
+	for (let index = 0; index < ids.length; index++) {
+		const elementId = ids[index];
+		const element = dataCardWishlist[elementId];
 		let showPrice = element.price !== undefined;
 		arrayCardsDiv.push(
 			<div key={index} className='wishlist__body-cards'>
-				<div className='wishlist__body-cards-delete'><i class="bi bi-x-lg" style={{ fontSize: '20px' }}></i></div>
+				<div className='wishlist__body-cards-delete' onClick={() => handleClickDelete(elementId)}><i class="bi bi-x-lg" style={{ fontSize: '20px' }}></i></div>
 				<div className='wishlist__body-cards-info'>
 					<div className='wishlist__body-cards-info-img'><img src={element.image}></img></div>
 					<div className='wishlist__body-cards-info-right'>
