@@ -61,10 +61,6 @@
 .card__body-up-like .bi-heart-fill{
 	display: flex;
 }
-.dopempty:hover{
-	opacity: 0;
-	transition: opacity 0.3s;
-}
 .card__body-up-sale{
 	position: absolute;
 	top: 2%;
