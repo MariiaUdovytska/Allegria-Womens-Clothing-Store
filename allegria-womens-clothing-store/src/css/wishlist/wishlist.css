@@ -1,0 +1,108 @@
+.wishlist{
+	margin: 0px auto;
+	max-width: 870px;
+	padding: 0px 15px;
+}
+.wishlist__body{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+.wishlist__body-cards{
+	width: 50%;
+	border: 1px solid #EAE9E8;
+	padding: 40px;
+}
+.wishlist__body-cards-delete{
+	display: flex;
+	justify-content: end;
+	margin-bottom: 5px;
+}
+.wishlist__body-cards-delete .bi-x-lg:hover{
+	color: #FD5454;
+	transition: color 0.3s;
+}
+.wishlist__body-cards-info{
+	display: flex;
+	flex-direction: row;
+	margin: 0px -12px;
+}
+
+.wishlist__body-cards-info-img{
+	flex: 1 1 38%;
+	height: 170px;
+	width: 100%;
+	padding: 0px 12px;
+}
+.wishlist__body-cards-info-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;	
+}
+.wishlist__body-cards-info-right{
+	flex: 1 1 62%;
+	padding: 12px 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.wishlist__body-cards-info-right-name{
+	text-transform: uppercase;
+	font-size: 1.28rem;
+	font-weight: 500;
+}
+.wishlist__body-cards-info-right-categories{
+	font-size: 1.14rem;
+	text-transform: capitalize;
+}
+.wishlist__body-cards-info-right-price{
+	display: flex;
+	flex-direction: row;
+}
+.wishlist__body-cards-info-right-price-old{
+	margin-left: 8px;
+	color: #CECECE;
+	font-family: 'Jost', sans-serif;
+}
+.wishlist__body-cards-info-right-price-old span::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin-top: -12px;
+	background-color: #CECECE;
+}
+.wishlist__body-cards-info-right-price-new{
+	padding-left: 8px;
+	color: #FD5454;
+	font-weight: 600;
+	font-family: 'Jost', sans-serif;
+}
+.wishlist__body-cards-info-right-instock{
+	display: flex;
+	flex-direction: column;
+	font-size: 0.85rem;
+	opacity: 0.7;
+}
+.wishlist__body-cards-info-right-havnot{
+	color: #cb4444;
+}
+.wishlist__body-cards-info-right-reportadmission{
+	margin-bottom: 10px;
+	cursor: pointer;
+	text-decoration-line: underline;
+}
+
+.wishlist__body-cards-info-right-btn{
+	border: 1px solid #0F303F;
+	text-transform: uppercase;
+	background-color: transparent;
+	padding: 14px 3px;
+	text-align: center;
+}
+.wishlist__body-cards-info-right-btn:hover{
+	background-color: #0f303fc0;
+	color: #fff;
+	transition: all 0.5s;
+}

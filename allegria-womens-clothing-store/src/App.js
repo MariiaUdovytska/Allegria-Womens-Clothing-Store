@@ -12,6 +12,7 @@ import Registration from './singInRegistrationConfirmation/Registration';
 import ProductCardsPage from './productCardsPage/ProductCardsPage';
 import ProductPage from './productPage/ProductPage';
 import QuestionPage from './question/QuestionPage';
+import Wishlist from './wishlist/Wishlist';
 
 function App() {
 	return (
@@ -30,6 +31,7 @@ function App() {
 							<Route path="/productCardsPage" element={<ProductCardsPage />} exact />
 							<Route path="/product" element={<ProductPage />} exact />
 							<Route path="/questionPage" element={<QuestionPage />} exact />
+							<Route path="/wishlist" element={<Wishlist />} exact />
 						</Routes>
 					</main>
 					<Footer />
