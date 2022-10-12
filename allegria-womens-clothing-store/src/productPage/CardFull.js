@@ -16,20 +16,6 @@ import ModalPayment from './ModalPayment';
 import ModalReturn from './ModalReturn';
 import Like from '../Like';
 
-// function getIds() {
-// 	let idsArray = localStorage.getItem("idsWishlist");
-// 	if (idsArray == null)
-// 		idsArray = [];
-// 	else
-// 		idsArray = JSON.parse(idsArray);
-// 	return idsArray;
-// }
-
-// function arrayRemove(arr, value) {
-// 	return arr.filter(function (element) {
-// 		return element != value;
-// 	});
-// }
 
 function CardFull(props) {
 	const [showPayment, setShowPayment] = useState(false);
@@ -57,6 +43,18 @@ function CardFull(props) {
 			<li key={index} className={(element.size.includes(sizes[index])) ? "" : "card-full__info-size-disabled"}>{sizes[index]}</li>
 		);
 	}
+	let slidesWithLike = element.images.map((image, index) =>
+		<SwiperSlide key={index}>
+			<img src={image} alt='clothing' />
+			<Like id={id} clickHandler={(x) => setDump(x)} dump={dump} />
+		</SwiperSlide>
+	);
+
+	let slides = element.images.map((image, index) =>
+		<SwiperSlide key={index}>
+			<img src={image} alt='clothing' />
+		</SwiperSlide>
+	);
 
 	if (props.sizeWidthType == 'desktop') {
 		return (
@@ -75,22 +73,7 @@ function CardFull(props) {
 							modules={[FreeMode, Navigation, Thumbs]}
 							className="mySwiper2"
 						>
-							<SwiperSlide>
-								<img src={element.image} alt='clothing' />
-								<Like id={id} clickHandler={(x) => setDump(x)} dump={dump} />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img src={element.image2} alt='clothing' />
-								<Like id={id} clickHandler={(x) => setDump(x)} dump={dump} />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img src={element.image3} alt='clothing' />
-								<Like id={id} clickHandler={(x) => setDump(x)} dump={dump} />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img src={element.image4} alt='clothing' />
-								<Like id={id} clickHandler={(x) => setDump(x)} dump={dump} />
-							</SwiperSlide>
+							{slidesWithLike}
 						</Swiper>
 						<Swiper
 							onSwiper={setThumbsSwiper}
@@ -102,18 +85,7 @@ function CardFull(props) {
 							modules={[FreeMode, Navigation, Thumbs]}
 							className="mySwiper"
 						>
-							<SwiperSlide>
-								<img src={element.image} alt='clothing' />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img src={element.image2} alt='clothing' />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img src={element.image3} alt='clothing' />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img src={element.image4} alt='clothing' />
-							</SwiperSlide>
+							{slides}
 						</Swiper>
 					</div>
 				</div>

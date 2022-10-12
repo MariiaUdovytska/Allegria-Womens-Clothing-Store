@@ -13,8 +13,15 @@ import Like from "../Like";
 
 export default function SwiperTablet(props) {
 	const [dump, setDump] = useState(0);
-
 	const element = stockCards[props.id];
+
+	let slidesWithLike = element.images.map((image, index) =>
+		<SwiperSlide key={index}>
+			<img src={image} alt='clothing' />
+			<Like id={props.id} clickHandler={(x) => setDump(x)} dump={dump} />
+		</SwiperSlide>
+	);
+
 	return (
 		<>
 			<Swiper
@@ -33,22 +40,7 @@ export default function SwiperTablet(props) {
 				modules={[EffectCoverflow, Pagination]}
 				className="mySwiper"
 			>
-				<SwiperSlide>
-					<img src={element.image} alt='clothing' />
-					<Like id={props.id} clickHandler={(x) => setDump(x)} dump={dump} />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={element.image2} alt='clothing' />
-					<Like id={props.id} clickHandler={(x) => setDump(x)} dump={dump} />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={element.image3} alt='clothing' />
-					<Like id={props.id} clickHandler={(x) => setDump(x)} dump={dump} />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={element.image4} alt='clothing' />
-					<Like id={props.id} clickHandler={(x) => setDump(x)} dump={dump} />
-				</SwiperSlide>
+				{slidesWithLike}
 			</Swiper>
 		</>
 	);
