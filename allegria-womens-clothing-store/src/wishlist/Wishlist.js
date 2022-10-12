@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import '../css/wishlist/wishlist.css';
 import stockCards from '../data/stockCards.json';
+import { Link } from 'react-router-dom';
 
 function getIds() {
 	let idsArray = localStorage.getItem("idsWishlist");
@@ -34,13 +35,21 @@ function Wishlist(props) {
 		const elementId = ids[index];
 		const element = dataCardWishlist[elementId];
 		let showPrice = element.price !== undefined;
+
+		let link = `/product?id=${elementId}`;
+		if (elementId === undefined) {
+			link = '/';
+		}
+
 		arrayCardsDiv.push(
 			<div key={index} className='wishlist__body-cards'>
-				<div className='wishlist__body-cards-delete' onClick={() => handleClickDelete(elementId)}><i class="bi bi-x-lg" style={{ fontSize: '20px' }}></i></div>
+				<div className='wishlist__body-cards-delete' onClick={() => handleClickDelete(elementId)}><i className="bi bi-x-lg" style={{ fontSize: '20px' }}></i></div>
 				<div className='wishlist__body-cards-info'>
 					<div className='wishlist__body-cards-info-img'><img src={element.image}></img></div>
-					<div className='wishlist__body-cards-info-right'>
-						<div className='wishlist__body-cards-info-right-name'>{element.name}</div>
+					<div className='wishlist__body-cards-info-right router-link'>
+						<Link to={link} key={elementId}>
+							<div className='wishlist__body-cards-info-right-name'>{element.name}</div>
+						</Link>
 						<div className='wishlist__body-cards-info-right-categories'>{element.categories}</div>
 						{showPrice === true
 							? <div className='wishlist__body-cards-info-right-price'>
@@ -55,7 +64,8 @@ function Wishlist(props) {
 						<button className='wishlist__body-cards-info-right-btn' type='submit'>добавить в корзину</button>
 					</div>
 				</div>
-			</div>);
+			</div>
+		);
 	}
 
 	return (
