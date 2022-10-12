@@ -1,42 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './css/productCard.css';
 import { Link } from 'react-router-dom';
-
-function getIds() {
-	let idsArray = localStorage.getItem("idsWishlist");
-	if (idsArray == null)
-		idsArray = [];
-	else
-		idsArray = JSON.parse(idsArray);
-	return idsArray;
-}
-
-function arrayRemove(arr, value) {
-	return arr.filter(function (element) {
-		return element != value;
-	});
-}
+import Like from './Like';
 
 function ProductCard(props) {
 	let showBusket = props.price !== undefined;
 	let showSale = props.sale !== undefined;
-
-	let ids = getIds();
-	const [liked, setLiked] = useState(ids.includes(props.id));
-
-
-	let handleClickLike = () => {
-		let ids_l = getIds();
-
-		if (liked === false) {
-			ids_l.push(props.id);
-		} else {
-			ids_l = arrayRemove(ids_l, props.id)
-		}
-
-		setLiked(!liked);
-		localStorage.setItem("idsWishlist", JSON.stringify(ids_l));
-	}
 
 	let link = `/product?id=${props.id}`;
 	if (props.id === undefined) {
@@ -49,16 +18,8 @@ function ProductCard(props) {
 					<Link to={link}><span className='card__body-hover'><span>переглянути</span></span></Link>
 					<div className='card__body-img'>
 						<Link to={link}><img src={props.image} alt='imageProduct'></img></Link>
-						<div onClick={() => handleClickLike()} className='card__body-icons'>
-							{liked === true
-								? <div className='card__body-up-like'>
-									<i className='bi bi-heart-fill' style={{ fontSize: '16px', color: '#E64926' }}></i></div>
-								: <div className='card__body-up-like'>
-									<i className='bi bi-heart' style={{ fontSize: '16px' }}></i>
-								</div>
-							}
-							<div className='card__body-up-sale' style={{ visibility: (showSale === true ? 'visible' : 'hidden') }}><span>{props.sale} %</span></div>
-						</div>
+						<Like id={props.id} />
+						<div className='card__body-up-sale' style={{ visibility: (showSale === true ? 'visible' : 'hidden') }}><span>{props.sale} %</span></div>
 					</div>
 					<Link to={link}>
 						<div className='card__body-nameprice'>
