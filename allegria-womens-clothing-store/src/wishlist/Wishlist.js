@@ -71,7 +71,10 @@ function Wishlist(props) {
 	return (
 		<div className='wishlist'>
 			<div className='wishlist__body'>
-				{arrayCardsDiv}
+				{(ids.length == 0)
+					? <div className='not-faund containerM'>{"Вы ничего не выбрали"}</div>
+					: arrayCardsDiv
+				}
 			</div>
 		</div>
 	);
