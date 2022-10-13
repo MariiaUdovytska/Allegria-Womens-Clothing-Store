@@ -45,7 +45,7 @@ function Wishlist(props) {
 			<div key={index} className='wishlist__body-cards'>
 				<div className='wishlist__body-cards-delete' onClick={() => handleClickDelete(elementId)}><i className="bi bi-x-lg" style={{ fontSize: '20px' }}></i></div>
 				<div className='wishlist__body-cards-info'>
-					<div className='wishlist__body-cards-info-img'><img src={element.image}></img></div>
+					<div className='wishlist__body-cards-info-img'><Link to={link} key={elementId}><img src={element.image}></img></Link></div>
 					<div className='wishlist__body-cards-info-right router-link'>
 						<Link to={link} key={elementId}>
 							<div className='wishlist__body-cards-info-right-name'>{element.name}</div>
