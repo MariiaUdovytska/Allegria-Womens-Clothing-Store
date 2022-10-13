@@ -55,6 +55,7 @@ class PreviewPopular extends React.Component {
 			arrayLi.push(
 				<SwiperSlide key={index} className='swiper-card'>
 					<ProductCard
+						id={element.id}
 						image={element.image}
 						name={element.name}
 						price={element.price}
