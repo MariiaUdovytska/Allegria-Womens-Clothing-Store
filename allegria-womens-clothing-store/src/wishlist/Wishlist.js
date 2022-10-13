@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import '../css/wishlist/wishlist.css';
 import stockCards from '../data/stockCards.json';
@@ -37,7 +36,7 @@ function Wishlist(props) {
 		const element = dataCardWishlist[elementId];
 
 		arrayCardsDiv.push(
-			<WishlistCards key={index} element={element} handleClickDelete={handleClickDelete} />
+			<WishlistCards key={index} element={element} handleClickDelete={handleClickDelete} showBtnBusket={true} />
 		);
 	}
 
