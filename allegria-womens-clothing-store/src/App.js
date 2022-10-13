@@ -13,6 +13,7 @@ import ProductCardsPage from './productCardsPage/ProductCardsPage';
 import ProductPage from './productPage/ProductPage';
 import QuestionPage from './question/QuestionPage';
 import Wishlist from './wishlist/Wishlist';
+import Busket from './busket/Busket';
 
 function App() {
 	return (
@@ -32,6 +33,7 @@ function App() {
 							<Route path="/product" element={<ProductPage />} exact />
 							<Route path="/questionPage" element={<QuestionPage />} exact />
 							<Route path="/wishlist" element={<Wishlist />} exact />
+							<Route path="/busket" element={<Busket />} exact />
 						</Routes>
 					</main>
 					<Footer />
