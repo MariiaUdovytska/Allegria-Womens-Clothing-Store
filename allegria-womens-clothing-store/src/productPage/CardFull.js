@@ -15,6 +15,7 @@ import SwiperTablet from './SwiperTablet';
 import ModalPayment from './ModalPayment';
 import ModalReturn from './ModalReturn';
 import Like from '../Like';
+import ButtonBusket from '../ButtonBusket';
 
 
 function CardFull(props) {
@@ -116,7 +117,7 @@ function CardFull(props) {
 						</ul>
 					</div>
 					<div className='card-full__info-btns'>
-						<button type='button'>добавить в корзину</button>
+						<ButtonBusket id={id} />
 						<button type='button'>купить в один клик</button>
 					</div>
 					<div className='card-full__info-dopinfo'>
@@ -172,7 +173,7 @@ function CardFull(props) {
 						</ul>
 					</div>
 					<div className='card-full__info-btns'>
-						<button type='button'>добавить в корзину</button>
+						<ButtonBusket id={id} />
 						<button type='button'>купить в один клик</button>
 					</div>
 					<div className='card-full__info-dopinfo'>

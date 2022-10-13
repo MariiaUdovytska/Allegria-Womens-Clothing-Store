@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/wishlist/wishlist.css';
 import { Link } from 'react-router-dom';
+import ButtonBusket from '../ButtonBusket';
 
 function WishlistCards(props) {
 	let element = props.element;
@@ -33,7 +34,10 @@ function WishlistCards(props) {
 							<span className='wishlist__body-cards-info-right-reportadmission'>Сообщить о поступлении</span>
 						</div>
 					}
-					<button className='wishlist__body-cards-info-right-btn' type='submit'>добавить в корзину</button>
+					{props.showBtnBusket === true
+						? <ButtonBusket id={element.id} />
+						: <div style={{ display: 'none' }}></div>
+					}
 				</div>
 			</div>
 		</div>

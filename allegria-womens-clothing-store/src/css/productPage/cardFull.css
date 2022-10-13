@@ -198,6 +198,7 @@
 .card-full__info-btns button:nth-child(odd){
 	background-color: unset;
 	color: #0F303F;
+	font-weight: 400;
 	border: 1px solid #0F303F;
 }
 .card-full__info-btns button:nth-child(odd):hover{
