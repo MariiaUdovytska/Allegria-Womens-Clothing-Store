@@ -24,6 +24,8 @@ function Like(props) {
 	}, [ids, props.id]);
 
 	let handleClickLike = () => {
+		if (props.id == undefined)
+			return;
 		let ids_l = getIds();
 
 		if (liked === false) {
