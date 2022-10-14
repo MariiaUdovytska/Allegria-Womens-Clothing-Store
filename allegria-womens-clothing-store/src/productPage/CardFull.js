@@ -94,7 +94,7 @@ function CardFull(props) {
 					<p className='card-full__info-name'>{element.name}</p>
 					<p className='card-full__info-categories'>{element.categories}</p>
 					{showPrice === true
-						? <p className='card-full__info-price'>{element.price}</p>
+						? <p className='card-full__info-price'>{element.price} UAH</p>
 						: <div className='card-full__info-instock'>
 							<span className='card-full__info-havnot'>нет в наличии</span>
 							<span className='card-full__info-reportadmission'>Сообщить о поступлении</span>
@@ -142,7 +142,7 @@ function CardFull(props) {
 					{showPrice === true
 						? <div className='card-full__info-price'>
 							<div className='card-full__info-price-old'><span>{element.oldPrice}</span></div>
-							<div className='card-full__info-price-now'><span>{element.price}</span></div>
+							<div className='card-full__info-price-now'><span>{element.price} UAH</span></div>
 						</div>
 						: <div className='card-full__info-instock'>
 							<span className='card-full__info-havnot'>нет в наличии</span>

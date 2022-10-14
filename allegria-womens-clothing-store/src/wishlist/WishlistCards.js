@@ -27,7 +27,7 @@ function WishlistCards(props) {
 					{showPrice === true
 						? <div className='wishlist__body-cards-info-right-price'>
 							<div className='wishlist__body-cards-info-right-price-old'><span>{element.oldPrice}</span></div>
-							<div className='wishlist__body-cards-info-right-price-new'><span>{element.price}</span></div>
+							<div className='wishlist__body-cards-info-right-price-new'><span>{element.price} UAH</span></div>
 						</div>
 						: <div className='wishlist__body-cards-info-right-instock'>
 							<span className='wishlist__body-cards-info-right-havnot'>нет в наличии</span>

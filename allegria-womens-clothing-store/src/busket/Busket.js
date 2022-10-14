@@ -30,8 +30,11 @@ function Busket(props) {
 		setIdsBusket(ids_l);
 	}
 
+	let sumPrices = 0;
+
 	for (let index = 0; index < idsBusket.length; index++) {
 		const element = dataCardBusket[idsBusket[index]];
+		sumPrices += element.price;
 		arrayCardsInBusket.push(
 			<WishlistCards key={index} element={element} handleClickDelete={handleClickDelete} />
 		);
@@ -44,8 +47,8 @@ function Busket(props) {
 					tst lef
 				</div>
 				<div className='busket__body-cards'>
-					test
 					{arrayCardsInBusket}
+					<div className='busket__body-cards-total'>Всего: <span>{sumPrices} UAH</span></div>
 				</div>
 			</div>
 		</div>

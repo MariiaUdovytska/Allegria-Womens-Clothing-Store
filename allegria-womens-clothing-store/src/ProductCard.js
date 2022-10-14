@@ -27,7 +27,7 @@ function ProductCard(props) {
 						{showBusket === true
 							? <div className='card__body-nameprice-yes'>
 								<div className='card__body-nameprice-price-old'><span>{props.oldPrice}</span></div>
-								<div className='card__body-nameprice-price'><span>{props.price}</span></div>
+								<div className='card__body-nameprice-price'><span>{props.price} UAH</span></div>
 							</div>
 							: <div className='card__body-nameprice-instock'>
 								<div className='card__body-nameprice-havnot'>не в наявності</div>
