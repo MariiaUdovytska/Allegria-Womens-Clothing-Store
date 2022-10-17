@@ -3,7 +3,6 @@
 	padding: 0px 30px;
 	max-width: 870px;
 }
-
 .busket__title{
 	text-align: center;
 	text-transform: uppercase;
@@ -14,13 +13,90 @@
 .busket__body{
 	display: flex;
 	flex-direction: row;
+	border: 1px solid #EAE9E8;
 }
 .busket__body-person{
 	flex: 1 1 50%;
+	padding: 30px;
 }
 
+.busket__body-person .form-control{
+	border: none;
+	border-bottom: 1px solid #254a5ad3;
+	border-radius: 0rem;
+	padding: 0.450rem 0rem;
+	color: #254A5A;
+}
+.busket__body-person .form-control:focus{
+	border-bottom: 1px solid #254a5ad3;
+	box-shadow: none;
+}
+.busket__body-person .form-control::placeholder{
+	font-size: 1.14rem;
+	color: #B7C1C5;
+}
+.busket__body-person .PhoneInput{
+	border-bottom: 1px solid #254a5ad3;
+	padding: 0.375rem 0rem;
+	width: 98.5%;
+}
+.busket__body-person-delivery{
+	color: #254A5A;
+}
+.busket__body-person-delivery p,
+.busket__body-person-methodpay p{
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.busket__body-person-delivery-area{
+	background-color: transparent;
+	border: none;
+	color: #254A5A;
+	margin-bottom: 8px;
+}
+.busket__body-person-delivery-area::placeholder{
+	opacity: 0.5;
+}
+.busket__body-person-edit,
+.busket__body-person-discount{
+	color: #E64926;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.busket__body-person-methodpay {}
+.busket__body-person-methodpay-radio{
+	color: #254A5A;
+	display: flex;
+	flex-direction: column;
+}
+.busket__body-person-methodpay-radio div{
+	margin-bottom: 10px;
+	display: flex;
+}
+.busket__body-person-methodpay-radio div input{
+	margin-right: 10px;
+}
+.busket__body-person-btn{
+	margin-top: 15px;
+}
+.busket__body-person-btn button{
+	width: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.14rem;
+	font-weight: 600;
+	background-color: #0F303F;
+	padding: 15px 3px;
+	color: #fff;
+}
+.busket__body-person-btn button:disabled{
+	opacity: 0.3;
+}
 .busket__body-cards{
 	flex: 1 1 50%;
+	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -35,7 +111,9 @@
 	margin-bottom: 8px;
 }
 .busket__body-cards-total{
-	border: 1px solid #EAE9E8;
+	border-left: 1px solid #EAE9E8;
+	border-right: 1px solid #EAE9E8;
+	border-bottom: 1px solid #EAE9E8;
 	font-size: 1.42rem;
 	padding: 30px;
 }

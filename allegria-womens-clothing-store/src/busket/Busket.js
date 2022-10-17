@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import '../css/busket/busket.css';
 import stockCards from '../data/stockCards.json';
 import WishlistCards from '../wishlist/WishlistCards';
+import { Form, Row, Col, Button } from 'react-bootstrap';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 
 function getIds() {
 	let idsArray = localStorage.getItem("idsBusket");
@@ -44,7 +47,68 @@ function Busket(props) {
 			<h2 className='busket__title'>Корзина</h2>
 			<div className='busket__body'>
 				<div className='busket__body-person'>
-					tst lef
+					<Form noValidate>
+						<Row className="mb-4">
+							<Form.Group as={Col} md="9" controlId="validationCustom01">
+								<Form.Control
+									required
+									type="text"
+									placeholder="Имя"
+								/>
+							</Form.Group>
+						</Row>
+						<Row className="mb-4">
+							<Form.Group as={Col} md="9" controlId="validationCustom02">
+								<Form.Control
+									required
+									type="text"
+									placeholder="Фамилия"
+								/>
+							</Form.Group>
+						</Row>
+						<Row className="mb-4">
+							<Form.Group className="col-md-9" controlId="formBasicEmailRegistration">
+								<Form.Control type="email" placeholder="E-mail" />
+							</Form.Group>
+						</Row>
+						<Row className="mb-4 col-md-9">
+							<PhoneInput value="" onChange={(value) => { }} placeholder="Телефон" />
+						</Row>
+						<div className='busket__body-person-delivery'>
+							<p>Доставка</p>
+							<textarea
+								type="text"
+								autofocus
+								rows="2"
+								id="adress"
+								name="adress"
+								className='busket__body-person-delivery-area col-md-9'
+								placeholder='Область, город, улица, квартира'>
+							</textarea>
+						</div>
+						<div className='busket__body-person-edit'>
+							Редактировать
+						</div>
+						<div className='busket__body-person-discount'>
+							Получить скидку
+						</div>
+						<div className='busket__body-person-methodpay'>
+							<p>Способ оплаты</p>
+							<div className='busket__body-person-methodpay-radio'>
+								<div>
+									<input type="radio" id="contactChoice1" name="contact" value="email"></input>
+									<label for="contactChoice1">Карточкой на сайте</label>
+								</div>
+								<div>
+									<input type="radio" id="contactChoice2" name="contact" value="phone"></input>
+									<label for="contactChoice2">При получении заказа</label>
+								</div>
+							</div>
+						</div>
+						<div className='busket__body-person-btn col-md-9'>
+							<button type='button' disabled>Заказать</button>
+						</div>
+					</Form>
 				</div>
 				<div className='busket__body-cards'>
 					{arrayCardsInBusket}
