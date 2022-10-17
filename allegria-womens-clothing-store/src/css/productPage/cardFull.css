@@ -195,22 +195,28 @@
 	text-transform: uppercase;
 	font-size: 1.14rem;
 }
-.card-full__info-btns button:nth-child(odd){
+.card-full__info-btns > .wishlist__body-cards-info-right-btn{
 	background-color: unset;
 	color: #0F303F;
 	font-weight: 400;
 	border: 1px solid #0F303F;
 }
-.card-full__info-btns button:nth-child(odd):hover{
+.card-full__info-btns > .wishlist__body-cards-info-right-btn:hover{
 	background-color: #EAE9E8;
 	transition: all 0.2s;
+	color: #0F303F;
 }
-.card-full__info-btns button:nth-child(even){
+.card-full__info-btns > .wishlist__body-cards-info-right-btn:disabled{
+	background-color: #59656ac0;
+	color: #fff;
+}
+.card-full__info-btns button{
+	background-color: transparent;
 	background-color: #0F303F;
 	border: 1px solid #0F303F;
 	color: #fff;
 }
-.card-full__info-btns button:nth-child(even):hover{
+.card-full__info-btns button:hover{
 	background-color: #0f303fd6;
 	transition: all 0.2s;
 }

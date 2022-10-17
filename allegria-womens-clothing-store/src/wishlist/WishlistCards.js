@@ -35,7 +35,7 @@ function WishlistCards(props) {
 						</div>
 					}
 					{props.showBtnBusket === true
-						? <ButtonBusket id={element.id} />
+						? <ButtonBusket id={element.id} disabled={element.price === undefined} />
 						: <div style={{ display: 'none' }}></div>
 					}
 				</div>

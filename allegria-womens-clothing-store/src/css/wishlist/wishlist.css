@@ -107,6 +107,20 @@
 	color: #fff;
 	transition: all 0.5s;
 }
+.wishlist__body-cards-info-right-btn:disabled{
+	background-color: #59656ac0;
+	color: #fff;
+}
+.toast{
+	--bs-toast-header-bg: rgb(239 234 234 / 40%);
+	--bs-toast-bg: #025981f5;
+	--bs-toast-color: #fff;
+}
+.toast-header{
+	color: #0F303F;
+	opacity: 0.5;
+	text-transform: uppercase;
+}
 @media (max-width:793px) {
 	.wishlist__body-cards{
 		padding: 40px 20px;

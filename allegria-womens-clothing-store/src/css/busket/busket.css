@@ -24,3 +24,21 @@
 	display: flex;
 	flex-direction: column;
 }
+.busket__body-cards > .wishlist__body-cards{
+	width: 100%;
+}
+.busket__body-cards > .wishlist__body-cards .wishlist__body-cards-info-right{
+	justify-content: unset;
+}
+.busket__body-cards > .wishlist__body-cards .wishlist__body-cards-info-right-name,
+.busket__body-cards > .wishlist__body-cards .wishlist__body-cards-info-right-categories{
+	margin-bottom: 8px;
+}
+.busket__body-cards-total{
+	border: 1px solid #EAE9E8;
+	font-size: 1.42rem;
+	padding: 30px;
+}
+.busket__body-cards-total span{
+	font-weight: 700;
+}

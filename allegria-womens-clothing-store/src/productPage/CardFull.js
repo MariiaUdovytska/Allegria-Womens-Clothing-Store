@@ -117,8 +117,8 @@ function CardFull(props) {
 						</ul>
 					</div>
 					<div className='card-full__info-btns'>
-						<ButtonBusket id={id} />
-						<button type='button'>купить в один клик</button>
+						<ButtonBusket id={id} disabled={element.price === undefined} />
+						<button className='card-full__info-btns-buy' type='button'>купить в один клик</button>
 					</div>
 					<div className='card-full__info-dopinfo'>
 						<span onClick={() => setShowPayment(true)}>Оплата и доставка</span>
