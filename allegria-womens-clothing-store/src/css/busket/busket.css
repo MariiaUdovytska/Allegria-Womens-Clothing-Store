@@ -65,7 +65,6 @@
 	margin-bottom: 15px;
 	cursor: pointer;
 }
-.busket__body-person-methodpay {}
 .busket__body-person-methodpay-radio{
 	color: #254A5A;
 	display: flex;
@@ -119,4 +118,16 @@
 }
 .busket__body-cards-total span{
 	font-weight: 700;
+}
+@media(max-width:767px){
+	.busket__body-person .PhoneInput{
+		border-bottom: 1px solid #254a5ad3;
+		padding: 0.375rem 0rem;
+		width: 100%;
+	}
+}
+@media(max-width:686px){
+	.busket__body{
+		flex-direction: column-reverse;
+	}
 }
