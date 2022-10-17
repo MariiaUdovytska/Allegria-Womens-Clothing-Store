@@ -1,0 +1,44 @@
+.busket-empty{
+	margin-top: 45px;
+}
+.busket-empty__body{
+	text-align: center;
+}
+.busket-empty__body h3{
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.78rem;
+	margin-bottom: 75px;
+}
+.busket-empty__body-imgs{
+	margin: 0px auto 45px;
+	max-width: 395px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.busket-empty__body-imgs img:first-child{
+	width: 114px;
+	height: 87px;
+	z-index: 2;
+}
+.busket-empty__body-imgs img:last-child{
+	margin-top: -6px;
+}
+
+.busket-empty__body p{
+	color: #254A5A;
+}
+.busket-empty__body button{
+	color: #EAE9E8;
+	text-transform: uppercase;
+	font-size: 1.14rem;
+	font-weight: 600;
+	padding: 15px 5px;
+	background-color: #0F303F;
+	min-width: 250px;
+}
+.busket-empty__body button:hover{
+	background-color: #2c4a59;
+	transition: all 0.3s;
+}
