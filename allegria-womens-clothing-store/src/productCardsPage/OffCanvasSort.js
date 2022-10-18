@@ -4,9 +4,30 @@ import { Button, Offcanvas } from 'react-bootstrap';
 
 function OffCanvasSort({ name, buttonName, ...props }) {
 	const [show, setShow] = useState(false);
+	const [touchPosition, setTouchPosition] = useState(null);
 
 	const handleClose = () => setShow(false);
 	const handleShow = () => setShow(true);
+
+	let handleTouchStart = (e) => {
+		let touchDown = 0;
+		touchDown = e.touches[0].clientY;
+		setTouchPosition(touchDown);
+	}
+
+	let handleTouchMove = (e) => {
+		const touchDown = touchPosition
+		if (touchDown === null) {
+			return
+		}
+
+		const currentTouch = e.touches[0].clientY
+		const diff = touchDown - currentTouch
+		if (diff < 5) {
+			setShow(false);
+		}
+		setTouchPosition(null);
+	}
 
 	return (
 		<>
@@ -17,7 +38,9 @@ function OffCanvasSort({ name, buttonName, ...props }) {
 				<Offcanvas.Header closeButton>
 					<Offcanvas.Title>Сортировать</Offcanvas.Title>
 				</Offcanvas.Header>
-				<Offcanvas.Body>
+				<Offcanvas.Body
+					onTouchStart={handleTouchStart}
+					onTouchMove={handleTouchMove}>
 					<ul>
 						<li>Новинки</li>
 						<li>По возрастанию цены</li>
