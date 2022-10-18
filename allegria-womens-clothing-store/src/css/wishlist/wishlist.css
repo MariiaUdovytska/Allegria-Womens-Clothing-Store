@@ -159,8 +159,20 @@
 		border-bottom: 1px solid #EAE9E8;
 	}
 }
+@media (max-width:372px){
+	.busket__body-cards .wishlist__body-cards-info-right-price-old span::after{
+		margin-left: -15px;
+		margin-top: -22px;
+		transform: rotateZ(-50deg);
+	}
+}
 @media (max-width:331px){
 	.wishlist__body-cards-info-right-btn{
 		font-size: 0.9rem;
+	}
+	.busket__body-cards .wishlist__body-cards-info-right-price-old span::after{
+		margin-left: -9px;
+		margin-top: -22px;
+		transform: rotateZ(-50deg);
 	}
 }

@@ -173,7 +173,7 @@ function CardFull(props) {
 						</ul>
 					</div>
 					<div className='card-full__info-btns'>
-						<ButtonBusket id={id} />
+						<ButtonBusket id={id} disabled={element.price === undefined} />
 						<button type='button'>купить в один клик</button>
 					</div>
 					<div className='card-full__info-dopinfo'>
