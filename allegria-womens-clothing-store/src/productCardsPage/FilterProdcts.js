@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/productCardsPage/filterProdcts.css';
 import { Accordion } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function FilterProdcts(props) {
 	return (
@@ -19,8 +20,8 @@ function FilterProdcts(props) {
 						<Accordion.Item eventKey="0">
 							<Accordion.Header>ОДЕЖДА</Accordion.Header>
 							<Accordion.Body >
-								<ul>
-									<li>Свитшоты и худи</li>
+								<ul className='router-link'>
+									<Link to="/productCardsPage" ><li onClick={props.onHide}>Свитшоты и худи</li></Link>
 									<li>Платья юбки</li>
 									<li>Футболки и топы</li>
 									<li>Брюки и шорты</li>

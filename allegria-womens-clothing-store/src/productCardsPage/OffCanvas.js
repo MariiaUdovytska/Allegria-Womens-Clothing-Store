@@ -63,7 +63,7 @@ function OffCanvas({ name, buttonName, ...props }) {
 				<Offcanvas.Body
 					onTouchStart={handleTouchStart}
 					onTouchMove={handleTouchMove}>
-					<FilterProdcts openAccordion={false} />
+					<FilterProdcts openAccordion={false} onHide={handleClose} />
 					<ExtensionFilter />
 				</Offcanvas.Body>
 			</Offcanvas>

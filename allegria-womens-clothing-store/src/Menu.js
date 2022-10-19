@@ -109,8 +109,8 @@ class Menu extends React.Component {
 							<div className='menu__icons router-link'>
 								<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 								<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
-								<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }}></i></Link>
-								<Link to="/busket"><i className="bi bi-bag" style={{ fontSize: '20px' }}></i></Link>
+								<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }} onClick={() => this.setState({ menuDetales: false })}></i></Link>
+								<Link to="/busket"><i className="bi bi-bag" style={{ fontSize: '20px' }} onClick={() => this.setState({ menuDetales: false })}></i></Link>
 							</div>
 							<div onTouchStart={this.handleTouchStart}
 								onTouchMove={this.handleTouchMove}
@@ -141,8 +141,8 @@ class Menu extends React.Component {
 								<div className='menu__icons router-link'>
 									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
-									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }}></i></Link>
-									<Link to="/busket"><i className="bi bi-bag" style={{ fontSize: '20px' }}></i></Link>
+									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
+									<Link to="/busket"><i className="bi bi-bag" style={{ fontSize: '20px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
 								</div>
 								<div className='menu__burger' onClick={() => this.setState({ openBurger: !this.state.openBurger })}>
 									{(this.state.openBurger === false)
@@ -210,8 +210,8 @@ class Menu extends React.Component {
 								<div className='menu__icons router-link'>
 									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
-									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }}></i></Link>
-									<Link to="/busket"><i className="bi bi-bag" style={{ fontSize: '20px' }}></i></Link>
+									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
+									<Link to="/busket"><i className="bi bi-bag" style={{ fontSize: '20px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
 								</div>
 								<div className='menu__burger' onClick={() => this.setState({ openBurger: !this.state.openBurger })}>
 									{(this.state.openBurger === false)
