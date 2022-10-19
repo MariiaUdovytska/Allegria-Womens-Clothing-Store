@@ -246,6 +246,32 @@
 	},
 	{
 		"id": 10,
+		"image": "./image/products/4feets.png",
+		"images": [
+			"./image/products/4feets.png",
+			"./image/products/copy/24feets.png",
+			"./image/products/copy/34feets.png",
+			"./image/products/copy/44feets.png"
+		],
+		"name": "birkenstock",
+		"categories": " Classic shoes",
+		"price": 1500,
+		"sale": "55",
+		"oldPrice": "3300 UAH",
+		"cod": "",
+		"color": "yellow",
+		"position": "respect",
+		"presence": "В наличии",
+		"size": [
+			"xs",
+			"s",
+			"l",
+			"xl",
+			"XP"
+		]
+	},
+	{
+		"id": 11,
 		"image": "./image/products/image61.png",
 		"images": [
 			"./image/products/image61.png",
@@ -271,7 +297,7 @@
 		]
 	},
 	{
-		"id": 11,
+		"id": 12,
 		"image": "./image/products/image37.png",
 		"images": [
 			"./image/products/image37.png",
@@ -294,7 +320,7 @@
 		]
 	},
 	{
-		"id": 12,
+		"id": 13,
 		"image": "./image/products/image38.png",
 		"images": [
 			"./image/products/image38.png",
@@ -318,7 +344,7 @@
 		]
 	},
 	{
-		"id": 13,
+		"id": 14,
 		"image": "./image/products/image31.png",
 		"images": [
 			"./image/products/image31.png",
@@ -344,7 +370,7 @@
 		]
 	},
 	{
-		"id": 14,
+		"id": 15,
 		"image": "./image/products/image38.png",
 		"images": [
 			"./image/products/image38.png",
@@ -367,7 +393,7 @@
 		]
 	},
 	{
-		"id": 15,
+		"id": 16,
 		"image": "./image/products/4feets.png",
 		"images": [
 			"./image/products/4feets.png",
@@ -388,7 +414,7 @@
 		]
 	},
 	{
-		"id": 16,
+		"id": 17,
 		"image": "./image/products/image31.png",
 		"images": [
 			"./image/products/image31.png",
@@ -414,7 +440,7 @@
 		]
 	},
 	{
-		"id": 17,
+		"id": 18,
 		"image": "./image/products/4feets.png",
 		"images": [
 			"./image/products/4feets.png",
@@ -438,7 +464,7 @@
 		]
 	},
 	{
-		"id": 18,
+		"id": 19,
 		"image": "./image/products/image31.png",
 		"images": [
 			"./image/products/image31.png",
@@ -460,32 +486,6 @@
 			"s",
 			"m",
 			"l"
-		]
-	},
-	{
-		"id": 19,
-		"image": "./image/products/4feets.png",
-		"images": [
-			"./image/products/4feets.png",
-			"./image/products/copy/24feets.png",
-			"./image/products/copy/34feets.png",
-			"./image/products/copy/44feets.png"
-		],
-		"name": "birkenstock",
-		"categories": " Classic shoes",
-		"price": 1500,
-		"sale": "55",
-		"oldPrice": "3300 UAH",
-		"cod": "",
-		"color": "yellow",
-		"position": "respect",
-		"presence": "В наличии",
-		"size": [
-			"xs",
-			"s",
-			"l",
-			"xl",
-			"XP"
 		]
 	},
 	{

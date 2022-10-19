@@ -26,7 +26,7 @@ function ProductsSide(props) {
 		);
 		case 'tablet': return (
 			<div className='side-products'>
-				<h1>name category</h1>
+				<h1>СВИТШОТЫ И ХУДИ</h1>
 				<div className='side-products-filt'>
 					<div className='side-products__filt-tab'>
 						<div className='side-products__filt-tabs'>
@@ -45,7 +45,7 @@ function ProductsSide(props) {
 		);
 		case 'phone': return (
 			<div className='side-products'>
-				<h1>name category</h1>
+				<h1>СВИТШОТЫ И ХУДИ</h1>
 				<div className='side-products-filt'>
 					<div className='side-products__filt-tab'>
 						<div className='side-products__filt-tabs'>

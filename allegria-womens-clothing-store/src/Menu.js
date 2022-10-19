@@ -31,7 +31,7 @@ class Menu extends React.Component {
 		let width = this.getWindowDimensions()
 		if (width <= 375)
 			this.setState({ sizeWidthType: 'phone' });
-		else if (width <= 768)
+		else if (width <= 800)
 			this.setState({ sizeWidthType: 'tablet' });
 		else
 			this.setState({ sizeWidthType: 'desktop' });
@@ -62,7 +62,7 @@ class Menu extends React.Component {
 		}
 		const currentTouch = e.touches[0].clientY
 		const diff = touchDown - currentTouch
-		if (diff > 5) {
+		if (diff > 15) {
 			this.topButtonClick()
 		}
 		this.setState({ touchPosition: null });
@@ -95,7 +95,7 @@ class Menu extends React.Component {
 									<li>Мужчины</li>
 									<li className='menu__navigate-search'>
 										поиск
-										<input className='menu__navigate-search-input' type='text'></input>
+										<input type='text'></input>
 									</li>
 								</ul>
 							</nav>

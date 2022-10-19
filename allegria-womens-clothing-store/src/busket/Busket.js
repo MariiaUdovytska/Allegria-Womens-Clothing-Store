@@ -80,7 +80,6 @@ function Busket(props) {
 								<p>Доставка</p>
 								<textarea
 									type="text"
-									autofocus
 									rows="2"
 									id="adress"
 									name="adress"
@@ -99,11 +98,11 @@ function Busket(props) {
 								<div className='busket__body-person-methodpay-radio'>
 									<div>
 										<input type="radio" id="contactChoice1" name="contact" value="email"></input>
-										<label for="contactChoice1">Карточкой на сайте</label>
+										<label htmlFor="contactChoice1">Карточкой на сайте</label>
 									</div>
 									<div>
 										<input type="radio" id="contactChoice2" name="contact" value="phone"></input>
-										<label for="contactChoice2">При получении заказа</label>
+										<label htmlFor="contactChoice2">При получении заказа</label>
 									</div>
 								</div>
 							</div>

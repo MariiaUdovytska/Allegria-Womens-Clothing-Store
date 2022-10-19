@@ -11,7 +11,7 @@ function MenuDetailed(props) {
 					<Accordion defaultActiveKey={(props.openAccordion === true) ? '0' : ''}>
 						<Accordion.Item eventKey="0">
 							<Accordion.Header>ОДЕЖДА</Accordion.Header>
-							<Accordion.Body style={(props.openAccordion !== true) ? { 'text-align': 'center' } : {}}>
+							<Accordion.Body style={(props.openAccordion !== true) ? { 'textAlign': 'center' } : {}}>
 								<ul className='router-link'>
 									<Link to="/productCardsPage" ><li onClick={props.onHide}>Свитшоты и худи</li></Link>
 									<li>Платья юбки</li>
@@ -34,7 +34,7 @@ function MenuDetailed(props) {
 					<Accordion defaultActiveKey={(props.openAccordion === true) ? '0' : ''}>
 						<Accordion.Item eventKey="0">
 							<Accordion.Header>ОБУВЬ</Accordion.Header>
-							<Accordion.Body style={(props.openAccordion !== true) ? { 'text-align': 'center' } : {}}>
+							<Accordion.Body style={(props.openAccordion !== true) ? { 'textAlign': 'center' } : {}}>
 								<ul>
 									<li>Кроссовки</li>
 									<li>Шлепанцы</li>
@@ -47,7 +47,7 @@ function MenuDetailed(props) {
 					<Accordion defaultActiveKey={(props.openAccordion === true) ? '0' : ''}>
 						<Accordion.Item eventKey="0">
 							<Accordion.Header>СУМКИ</Accordion.Header>
-							<Accordion.Body style={(props.openAccordion !== true) ? { 'text-align': 'center' } : {}}>
+							<Accordion.Body style={(props.openAccordion !== true) ? { 'textAlign': 'center' } : {}}>
 								<ul>
 									<li>Сумки</li>
 									<li>Рюкзаки</li>
@@ -64,7 +64,7 @@ function MenuDetailed(props) {
 					<Accordion defaultActiveKey={(props.openAccordion === true) ? '0' : ''}>
 						<Accordion.Item eventKey="0">
 							<Accordion.Header>АКСЕСУАРИ</Accordion.Header>
-							<Accordion.Body style={(props.openAccordion !== true) ? { 'text-align': 'center' } : {}}>
+							<Accordion.Body style={(props.openAccordion !== true) ? { 'textAlign': 'center' } : {}}>
 								<ul>
 									<li>Головные уборы</li>
 									<li>Перчатки</li>
@@ -81,7 +81,7 @@ function MenuDetailed(props) {
 					<Accordion defaultActiveKey={(props.openAccordion === true) ? '0' : ''}>
 						<Accordion.Item eventKey="0">
 							<Accordion.Header>БЕЛЬЕ</Accordion.Header>
-							<Accordion.Body style={(props.openAccordion !== true) ? { 'text-align': 'center' } : {}}>
+							<Accordion.Body style={(props.openAccordion !== true) ? { 'textAlign': 'center' } : {}}>
 								<ul>
 									<li>Разное</li>
 								</ul>
