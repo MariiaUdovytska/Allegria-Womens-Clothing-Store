@@ -19,7 +19,7 @@ function App() {
 	return (
 		<div className='wrapper'>
 			<div className='page'>
-				<BrowserRouter> {/*<BrowserRouter basename="/Allegria-Womens-Clothing-Store">*/}
+				<BrowserRouter basename="/Allegria-Womens-Clothing-Store">
 					<ScrollToTop />
 					<Menu />
 					<main className='main'>
@@ -37,7 +37,7 @@ function App() {
 						</Routes>
 					</main>
 					<Footer />
-					{/* <ModalWindowTimer /> */}
+					<ModalWindowTimer />
 				</BrowserRouter>
 			</div>
 		</div>
