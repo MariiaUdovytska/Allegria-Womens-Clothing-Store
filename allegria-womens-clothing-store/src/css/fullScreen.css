@@ -103,17 +103,70 @@
 	font-size: 1.9rem!important;
 	font-family: 'Cormorant Garamond', serif;
 }
-.full-screen__body-caption-one ,.carousel-caption p,
-.full-screen__body-carousel-caption-info p{
-	font-size: 1.14rem;
-	font-weight: 400;
+.full-screen__body-caption-one ,.carousel-caption button{
+	margin: 0px auto;
 }
-.full-screen__body-carousel-caption-info p{
+.full-screen__body-caption-one ,.carousel-caption button,
+.full-screen__body-carousel-caption-info button{
+	background-color: transparent;
 	color: #E64926;
+	position: relative;
+	display: block;
+	font-size: 14px;
+	padding: 5px;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 1s all ease;
+}
+.full-screen__body-caption-one ,.carousel-caption button::before,
+.full-screen__body-carousel-caption-info button::before{
+	background: #818181;
+	opacity: 0.2;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+	transition: all 0.5s ease;
+	width: 100%;
+	height: 0%;
+	transform: translate(-50%,-50%) rotate(30deg);
+}
+.full-screen__body-caption-one ,.carousel-caption button::before{
+	opacity: 0.4;
+}
+.caption-info-three button::before{
+	opacity: 1;
+}
+.full-screen__body-caption-one ,.carousel-caption button:hover::before,
+.full-screen__body-carousel-caption-info button:hover::before{
+	height: 380%;
 }
 .carousel-control-next, .carousel-control-prev{
 	z-index: 4;
-	display: none;
+	align-items: end;
+	background-color: #E64926;
+	border-radius: 50px;
+	width: 40px;
+	top: unset;
+	transform: translate(0px, -15px);
+	opacity: 0.3;
+}
+.carousel-control-prev{
+	margin-left: 8px;
+}
+.carousel-control-next{
+	margin-right: 8px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	height: 3rem;
+}
+.carousel-control-next:focus,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-prev:hover{
+	opacity: 0.5;
 }
 .carousel-indicators{
 	z-index: 4;
@@ -168,6 +221,15 @@
 		display: flex;
 		justify-content: center;
 		text-align: center;
+	}
+	.full-screen__body-carousel-caption-info button{
+		margin: 0px auto;
+	}
+	.caption-info-two button::before{
+		opacity: 0.4;
+	}
+	.caption-info-three button::before{
+		opacity: 0.2;
 	}
 	.full-screen__body-carousel-two-caption{ 
 		color: #E64926;

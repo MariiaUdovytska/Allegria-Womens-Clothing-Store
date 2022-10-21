@@ -94,7 +94,7 @@ class Menu extends React.Component {
 									</li>
 									<li>Мужчины</li>
 									<li className='menu__navigate-search'>
-										поиск
+										<i className="bi bi-search"></i>
 										<input type='text'></input>
 									</li>
 								</ul>
@@ -163,7 +163,7 @@ class Menu extends React.Component {
 											</li>
 											<li>Мужчины</li>
 											<li className='menu__navigate-search-table'>
-												поиск
+												<i className="bi bi-search"></i>
 												<input type='text'></input>
 											</li>
 										</ul>
@@ -239,7 +239,7 @@ class Menu extends React.Component {
 									<div className='menu__lang'>
 										<ul className='menu__lang-phone-ul'>
 											<li className='menu__navigate-search-phone'>
-												поиск
+												<i className="bi bi-search"></i>
 												<input type='text'></input>
 											</li>
 											<li className='menu__lang-active'>ru</li>

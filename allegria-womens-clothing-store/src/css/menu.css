@@ -56,7 +56,6 @@
 	padding-left: 0px;
 }
 .menu__navigate ul li{
-	/* padding: 0px 40px; */
 	cursor: pointer;
 	padding: 23px 20px 0px;
 }
@@ -77,12 +76,21 @@
 	display: flex;
 	align-items: center;
 }
+.menu__navigate-search .bi-search,
+.menu__navigate-search-table .bi-search,
+.menu__navigate-search-phone .bi-search{
+	border-bottom: 1px solid #0F303F;
+}
+.menu__navigate-search .bi-search::before,
+.menu__navigate-search-table .bi-search::before,
+.menu__navigate-search-phone .bi-search::before{
+	font-size: 20px;
+}
 .menu__navigate-search input,
 .menu__navigate-search-table input,
 .menu__navigate-search-phone input{
 	border-radius: 0;
 	border-bottom: 1px solid #0F303F;
-	margin-left: 10px;
 }
 .menu__navigate-search-table input,
 .menu__navigate-search-phone input{
@@ -94,10 +102,10 @@
 .menu__lang ul{
 	display: flex;
 	flex-direction: row;
-	margin:  0px -20px;
+	margin:  0px -12px;
 }
 .menu__lang ul li{
-	padding: 23px 20px 0px ;
+	padding: 23px 12px 0px ;
 	cursor: pointer;
 }
 .menu__lang ul li:hover,
@@ -121,7 +129,7 @@
 }
 .menu__icons .bi-person,
 .menu__icons .bi-heart,
-.menu__icons  .bi-bag{
+.menu__icons .bi-bag{
 	padding: 0px 15px;
 }
 
@@ -298,5 +306,8 @@
 	}
 	.menu-detailed__phone-info span{
 		padding: 0px 10px;
+	}
+	.menu__navigate-search-phone .bi-search::before{
+		font-size: 18px;
 	}
 }

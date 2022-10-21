@@ -1,13 +1,13 @@
 import React from 'react';
 import './css/fullScreen.css';
-import { Carousel } from 'react-bootstrap';
+import { Button, Carousel } from 'react-bootstrap';
 import oneSuit from './image/fullScreen/1suit.jpg';
 import oneGerl from './image/fullScreen/1gerl.jpg';
 import twoGerls from './image/fullScreen/2gerls.jpg';
 import threeGerlsOnPillow from './image/fullScreen/3girlsOnPillow.jpg';
 import fourGerl from './image/fullScreen/4gerl.jpg';
 import fourFeets from './image/fullScreen/4feets.jpg';
-import { HashLink, NavHashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 
 
@@ -28,16 +28,16 @@ function FullScreen() {
 						<Carousel.Caption>
 							<h4>бренд</h4>
 							<h3>american vintage</h3>
-							<p className='router-link '><Link to="/brands">Cмотреть коллекцию</Link></p>
+							<button className='router-link '><Link to="/brands">Cмотреть коллекцию</Link></button>
 						</Carousel.Caption>
 					</Carousel.Item>
 					<Carousel.Item>
 						<div className='full-screen__body-carousel-two'>
 							<div className='full-screen__body-carousel-two-caption'>
-								<div className='full-screen__body-carousel-caption-info'>
+								<div className='full-screen__body-carousel-caption-info caption-info-two'>
 									<h4>бренд</h4>
 									<h3>george gina lucy</h3>
-									<p className='router-link '><HashLink to="/brands#section-three">Cмотреть коллекцию</HashLink></p>
+									<button type='button' className='router-link '><HashLink to="/brands#section-three">Cмотреть коллекцию</HashLink></button>
 								</div>
 							</div>
 							<div className='full-screen__body-carousel-two-img'>
@@ -48,10 +48,10 @@ function FullScreen() {
 					<Carousel.Item>
 						<div className='full-screen__body-carousel-three'>
 							<div className='full-screen__body-carousel-three-caption'>
-								<div className='full-screen__body-carousel-caption-info'>
+								<div className='full-screen__body-carousel-caption-info caption-info-three'>
 									<h4>бренд</h4>
 									<h3>deha</h3>
-									<p className='router-link '><HashLink to="/brands#section-two">Cмотреть коллекцию</HashLink></p>
+									<button className='router-link '><HashLink to="/brands#section-two">Cмотреть коллекцию</HashLink></button>
 								</div>
 							</div>
 							<div className='full-screen__body-carousel-three-img'>
@@ -65,7 +65,7 @@ function FullScreen() {
 								<div className='full-screen__body-carousel-caption-info'>
 									<h4>бренд</h4>
 									<h3>birkenstock</h3>
-									<p className='router-link'><HashLink to="/brands#section-four">Cмотреть коллекцию</HashLink></p>
+									<button className='router-link'><HashLink to="/brands#section-four">Cмотреть коллекцию</HashLink></button>
 								</div>
 							</div>
 							<div className='full-screen__body-carousel-four-img'>
