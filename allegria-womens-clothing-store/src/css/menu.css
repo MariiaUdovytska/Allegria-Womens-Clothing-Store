@@ -84,7 +84,7 @@
 .menu__navigate-search .bi-search::before,
 .menu__navigate-search-table .bi-search::before,
 .menu__navigate-search-phone .bi-search::before{
-	font-size: 20px;
+	font-size: 18px;
 }
 .menu__navigate-search input,
 .menu__navigate-search-table input,
@@ -102,10 +102,10 @@
 .menu__lang ul{
 	display: flex;
 	flex-direction: row;
-	margin:  0px -12px;
+	margin:  0px -10px;
 }
 .menu__lang ul li{
-	padding: 23px 12px 0px ;
+	padding: 23px 10px 0px ;
 	cursor: pointer;
 }
 .menu__lang ul li:hover,
@@ -132,7 +132,10 @@
 .menu__icons .bi-bag{
 	padding: 0px 15px;
 }
-
+.menu__icons .bi-person::before,
+.menu__icons .bi-heart::before{
+	margin-top: 8px;
+}
 .menu__phone-right{
 	display: flex;
 	flex-direction: row;
