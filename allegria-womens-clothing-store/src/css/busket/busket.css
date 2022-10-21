@@ -40,6 +40,9 @@
 	padding: 0.375rem 0rem;
 	width: 98.5%;
 }
+.busket__body-person .PhoneInputCountry{
+	padding-left: 0px;
+}
 .busket__body-person-delivery{
 	color: #254A5A;
 }
@@ -73,6 +76,7 @@
 .busket__body-person-methodpay-radio div{
 	margin-bottom: 10px;
 	display: flex;
+	align-items: center;
 }
 .busket__body-person-methodpay-radio div input{
 	margin-right: 10px;

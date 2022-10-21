@@ -14,7 +14,7 @@ function ProductCard(props) {
 	return (
 		<div className='cardd'>
 			<div className='card__body router-link'>
-				<Link to={link}><span className='card__body-hover'><span>переглянути</span></span></Link>
+				<Link to={link}><span className='card__body-hover'><span>смотреть</span></span></Link>
 				<div className='card__body-img'>
 					<Link to={link}><img src={props.image} alt='imageProduct'></img></Link>
 					<Like id={props.id} />

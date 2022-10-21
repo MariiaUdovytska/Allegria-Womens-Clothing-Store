@@ -8,7 +8,7 @@ function MainPage() {
 		<div>
 			<FullScreen />
 			<NewArrival />
-			<PreviewPopular swiperName={'Популярне'} />
+			<PreviewPopular swiperName={'Популярное'} />
 			<PreviewAbout />
 		</div>
 	);

@@ -38,7 +38,7 @@ function ButtonBusket(props) {
 			>
 				добавить в корзину
 			</button>
-			<Toast onClose={() => setToastShow(false)} show={toastShow} delay={1500} autohide style={{ position: "fixed", bottom: "25px", right: "25px" }}>
+			<Toast onClose={() => setToastShow(false)} show={toastShow} delay={2500} autohide style={{ position: "fixed", bottom: "25px", right: "25px" }}>
 				<Toast.Header closeButton={false}>
 					<strong className="me-auto">Allegria</strong>
 				</Toast.Header>
