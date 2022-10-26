@@ -34,7 +34,7 @@ function SingInModal(props) {
 					</div>
 					<div className='modal__questions'>
 						<span>Забыли пароль </span>/
-						<span className='router-link'><Link to="/registration" onClick={() => this.props.onHide()} > У меня нет акаунта</Link></span>
+						<span className='router-link'><Link to="/registration" onClick={() => props.onHide()} > У меня нет акаунта</Link></span>
 					</div>
 				</Modal.Footer>
 			</Modal>
