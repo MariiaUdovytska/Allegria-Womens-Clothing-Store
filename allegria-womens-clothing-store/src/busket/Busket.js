@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import '../css/busket/busket.css';
 import stockCards from '../data/stockCards.json';
 import WishlistCards from '../wishlist/WishlistCards';
-import { Form, Row, Col, Button } from 'react-bootstrap';
+import { Form, Row, Col } from 'react-bootstrap';
 import PhoneInput from 'react-phone-number-input';
 import BasketIsEmpty from './BasketIsEmpty';
 import 'react-phone-number-input/style.css';
+import { connect } from 'react-redux';
 
 function getIds() {
 	let idsArray = localStorage.getItem("idsBusket");
@@ -32,6 +33,7 @@ function Busket(props) {
 		ids_l = arrayRemove(ids_l, id);
 		localStorage.setItem("idsBusket", JSON.stringify(ids_l));
 		setIdsBusket(ids_l);
+		props.onDecrementCount();
 	}
 
 	let sumPrices = 0;
@@ -123,7 +125,21 @@ function Busket(props) {
 			<BasketIsEmpty />
 		);
 	}
-
 }
 
-export default Busket;
+function mapStateToProps(state) {
+	const { busketReducer } = state;
+	return {
+		busket: busketReducer.busket
+	}
+}
+
+function mapDispatchToProps(dispatch) {
+	return {
+		onDecrementCount: () => {
+			const action = { type: 'DECREMENT' };
+			dispatch(action);
+		}
+	}
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Busket);

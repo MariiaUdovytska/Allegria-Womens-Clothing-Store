@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './css/wishlist/wishlist.css';
 import Toast from 'react-bootstrap/Toast';
 
-function getIds() {
+import { connect } from 'react-redux';
+
+function getIds(props) {
 	let idsArray = localStorage.getItem("idsBusket");
 	if (idsArray == null)
 		idsArray = [];
@@ -16,7 +18,7 @@ function ButtonBusket(props) {
 	const [inBusket, setInBusket] = useState(getIds().includes(props.id));
 
 	let handleClickBusket = () => {
-		if (props.id == undefined)
+		if (props.id === undefined)
 			return;
 		let ids_l = getIds();
 
@@ -25,6 +27,7 @@ function ButtonBusket(props) {
 			localStorage.setItem("idsBusket", JSON.stringify(ids_l));
 			setToastShow(true);
 			setInBusket(true);
+			props.onIncrementCount()
 		}
 	}
 
@@ -48,4 +51,20 @@ function ButtonBusket(props) {
 	)
 }
 
-export default ButtonBusket;
+function mapStateToProps(state) {
+	const { busketReducer } = state;
+	return {
+		busket: busketReducer.busket
+	}
+}
+
+function mapDispatchToProps(dispatch) {
+	return {
+		onIncrementCount: () => {
+			const action = { type: 'INCREMENT' };
+			dispatch(action);
+		}
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ButtonBusket);
