@@ -6,8 +6,9 @@ import e from './image/logo/e.png';
 import g from './image/logo/g.png';
 import r from './image/logo/r.png';
 import i from './image/logo/i.png';
-import MenuDetailed from './MenuDetailed';
 import { Link } from 'react-router-dom';
+import MenuDetailed from './MenuDetailed';
+import IconsBusket from './IconsBusket';
 import SingInModal from './singInRegistrationConfirmation/SingInModal';
 
 class Menu extends React.Component {
@@ -110,7 +111,10 @@ class Menu extends React.Component {
 								<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 								<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
 								<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }} onClick={() => this.setState({ menuDetales: false })}></i></Link>
-								<Link to="/busket"><i className="bi bi-bag" style={{ fontSize: '20px' }} onClick={() => this.setState({ menuDetales: false })}></i></Link>
+								<span style={{ position: "relative" }}
+									onClick={() => this.setState({ menuDetales: false })}>
+									<IconsBusket />
+								</span>
 							</div>
 							<div onTouchStart={this.handleTouchStart}
 								onTouchMove={this.handleTouchMove}
@@ -142,7 +146,10 @@ class Menu extends React.Component {
 									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
 									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
-									<Link to="/busket"><i className="bi bi-bag" style={{ fontSize: '20px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
+									<span style={{ position: "relative" }}
+										onClick={() => this.setState({ openBurger: false })}>
+										<IconsBusket />
+									</span>
 								</div>
 								<div className='menu__burger' onClick={() => this.setState({ openBurger: !this.state.openBurger })}>
 									{(this.state.openBurger === false)
@@ -211,7 +218,10 @@ class Menu extends React.Component {
 									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
 									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
-									<Link to="/busket"><i className="bi bi-bag" style={{ fontSize: '20px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
+									<span style={{ position: "relative" }}
+										onClick={() => this.setState({ openBurger: false })}>
+										<IconsBusket />
+									</span>
 								</div>
 								<div className='menu__burger' onClick={() => this.setState({ openBurger: !this.state.openBurger })}>
 									{(this.state.openBurger === false)

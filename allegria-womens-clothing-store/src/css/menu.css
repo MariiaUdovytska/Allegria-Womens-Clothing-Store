@@ -132,6 +132,23 @@
 .menu__icons .bi-bag{
 	padding: 0px 15px;
 }
+
+.menu__icons-count{
+	position: absolute;
+	right: 23%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	min-width: 15px;
+	line-height: 1rem;
+	color: #fff;
+	letter-spacing: 0;
+	background-color: #E64926;
+	border-radius: 30px;
+	font-size: 0.75rem;
+	padding: 1px 2px;
+}
+
 .menu__icons .bi-person::before,
 .menu__icons .bi-heart::before{
 	margin-top: 8px;
@@ -210,6 +227,9 @@
 	.menu__icons  .bi-bag{
 		padding: 0px 7px;
 	}
+	.menu__icons-count{
+		right: 14%;
+	}
 }
 @media (max-width:898px){
 	.menu__logo img{
@@ -237,6 +257,9 @@
 	.menu__icons .bi-heart,
 	.menu__icons  .bi-bag{
 		padding: 0px 3px;
+	}
+	.menu__icons-count{
+		right: 3%;
 	}
 	.menu__detailed{
 		padding-left: 3%;
