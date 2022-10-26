@@ -9,6 +9,7 @@ import i from './image/logo/i.png';
 import { Link } from 'react-router-dom';
 import MenuDetailed from './MenuDetailed';
 import IconsBusket from './IconsBusket';
+import IconsLikes from './IconsLikes';
 import SingInModal from './singInRegistrationConfirmation/SingInModal';
 
 class Menu extends React.Component {
@@ -110,7 +111,10 @@ class Menu extends React.Component {
 							<div className='menu__icons router-link'>
 								<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 								<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
-								<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }} onClick={() => this.setState({ menuDetales: false })}></i></Link>
+								<span style={{ position: "relative" }}
+									onClick={() => this.setState({ menuDetales: false })}>
+									<IconsLikes />
+								</span>
 								<span style={{ position: "relative" }}
 									onClick={() => this.setState({ menuDetales: false })}>
 									<IconsBusket />
@@ -145,7 +149,10 @@ class Menu extends React.Component {
 								<div className='menu__icons router-link'>
 									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
-									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
+									<span style={{ position: "relative" }}
+										onClick={() => this.setState({ openBurger: false })}>
+										<IconsLikes />
+									</span>
 									<span style={{ position: "relative" }}
 										onClick={() => this.setState({ openBurger: false })}>
 										<IconsBusket />
@@ -217,7 +224,10 @@ class Menu extends React.Component {
 								<div className='menu__icons router-link'>
 									<i onClick={() => this.setState({ show: true })} className="bi bi-person" style={{ fontSize: '23px' }}></i>
 									<SingInModal show={this.state.show} onHide={() => this.setState({ show: false })} />
-									<Link to="/wishlist"><i className="bi bi-heart" style={{ fontSize: '19px' }} onClick={() => this.setState({ openBurger: false })}></i></Link>
+									<span style={{ position: "relative" }}
+										onClick={() => this.setState({ openBurger: false })}>
+										<IconsLikes />
+									</span>
 									<span style={{ position: "relative" }}
 										onClick={() => this.setState({ openBurger: false })}>
 										<IconsBusket />

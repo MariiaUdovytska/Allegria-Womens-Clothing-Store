@@ -281,6 +281,9 @@
 	.menu__icons  .bi-bag{
 		padding: 0px 7px;
 	}
+	.menu__icons-count{
+		right: 11%;
+	}
 	.menu__burger .bi-x-lg,
 	.menu__burger .bi-filter-right{
 		padding-left: 27px;
