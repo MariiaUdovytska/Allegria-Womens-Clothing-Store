@@ -137,7 +137,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
 	return {
 		onDecrementCount: () => {
-			const action = { type: 'DECREMENT' };
+			const action = { type: 'BUSKET_DECREMENT' };
 			dispatch(action);
 		}
 	}

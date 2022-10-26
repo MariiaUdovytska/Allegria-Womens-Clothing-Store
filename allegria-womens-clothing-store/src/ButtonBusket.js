@@ -27,7 +27,7 @@ function ButtonBusket(props) {
 			localStorage.setItem("idsBusket", JSON.stringify(ids_l));
 			setToastShow(true);
 			setInBusket(true);
-			props.onIncrementCount()
+			props.onIncrementCount();
 		}
 	}
 
@@ -61,7 +61,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
 	return {
 		onIncrementCount: () => {
-			const action = { type: 'INCREMENT' };
+			const action = { type: 'BUSKET_INCREMENT' };
 			dispatch(action);
 		}
 	}

@@ -6,7 +6,7 @@ function IconsBusket(props) {
 	return (
 		<Link to="/busket" >
 			<i className="bi bi-bag" style={{ fontSize: '20px' }}></i>
-			<span className='menu__icons-count'>{props.busket}</span>
+			{(props.busket > 0) ? <span className='menu__icons-count count-busket '>{props.busket}</span> : ""}
 		</Link>
 	)
 }
