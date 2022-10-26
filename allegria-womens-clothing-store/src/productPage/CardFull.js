@@ -57,7 +57,7 @@ function CardFull(props) {
 		</SwiperSlide>
 	);
 
-	if (props.sizeWidthType == 'desktop') {
+	if (props.sizeWidthType === 'desktop') {
 		return (
 			<div className='card-full'>
 				<div className='card-full__imgs'>

@@ -25,7 +25,7 @@ function PasswordField() {
 	}
 
 	const Eye = () => {
-		if (password == "password") {
+		if (password === "password") {
 			setpassword("text");
 			seteye(false);
 			settype(true);

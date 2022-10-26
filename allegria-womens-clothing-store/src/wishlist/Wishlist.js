@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../css/wishlist/wishlist.css';
 import stockCards from '../data/stockCards.json';
-import { Link } from 'react-router-dom';
 import WishlistCards from './WishlistCards';
 
 function getIds() {
@@ -43,7 +42,7 @@ function Wishlist(props) {
 	return (
 		<div className='wishlist'>
 			<div className='wishlist__body'>
-				{(ids.length == 0)
+				{(ids.length === 0)
 					? <div className='not-faund containerM'>{"Вы ничего не выбрали"}</div>
 					: arrayCardsDiv
 				}

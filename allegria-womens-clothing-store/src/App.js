@@ -1,12 +1,13 @@
 import './css/page.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import ScrollToTop from './ScrollToTop';
 import Footer from './Footer';
 import Menu from './Menu';
 import MainPage from './MainPage';
 import ModalWindowTimer from './ModalWindowTimer';
 import About from './about/About';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollToTop from './ScrollToTop';
 import BrandsPage from './brands/BrandsPage';
 import Registration from './singInRegistrationConfirmation/Registration';
 import ProductCardsPage from './productCardsPage/ProductCardsPage';
@@ -37,7 +38,7 @@ function App() {
 						</Routes>
 					</main>
 					<Footer />
-					<ModalWindowTimer />
+					{/* <ModalWindowTimer /> */}
 				</BrowserRouter>
 			</div>
 		</div>

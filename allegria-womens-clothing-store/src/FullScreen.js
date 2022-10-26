@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/fullScreen.css';
-import { Button, Carousel } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import oneSuit from './image/fullScreen/1suit.jpg';
 import oneGerl from './image/fullScreen/1gerl.jpg';
 import twoGerls from './image/fullScreen/2gerls.jpg';
