@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Allegria-Womens-Clothing-Store/static/css/main.cfe194a5.css",
-    "main.js": "/Allegria-Womens-Clothing-Store/static/js/main.934e8aa8.js",
+    "main.js": "/Allegria-Womens-Clothing-Store/static/js/main.2e533187.js",
     "static/js/787.fdf664d9.chunk.js": "/Allegria-Womens-Clothing-Store/static/js/787.fdf664d9.chunk.js",
     "static/media/fullscreen.jpg": "/Allegria-Womens-Clothing-Store/static/media/fullscreen.0d375d770d32747892f6.jpg",
     "static/media/image70.png": "/Allegria-Womens-Clothing-Store/static/media/image70.aa5698fbcf8b42b589b8.png",
@@ -32,11 +32,11 @@
     "static/media/4feets.jpg": "/Allegria-Womens-Clothing-Store/static/media/4feets.605f00a236fe4b448010.jpg",
     "index.html": "/Allegria-Womens-Clothing-Store/index.html",
     "main.cfe194a5.css.map": "/Allegria-Womens-Clothing-Store/static/css/main.cfe194a5.css.map",
-    "main.934e8aa8.js.map": "/Allegria-Womens-Clothing-Store/static/js/main.934e8aa8.js.map",
+    "main.2e533187.js.map": "/Allegria-Womens-Clothing-Store/static/js/main.2e533187.js.map",
     "787.fdf664d9.chunk.js.map": "/Allegria-Womens-Clothing-Store/static/js/787.fdf664d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cfe194a5.css",
-    "static/js/main.934e8aa8.js"
+    "static/js/main.2e533187.js"
   ]
 }
