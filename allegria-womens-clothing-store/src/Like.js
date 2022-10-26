@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './css/productCard.css';
 
+import { connect } from 'react-redux';
+
 function getIds() {
 	let idsArray = localStorage.getItem("idsWishlist");
 	if (idsArray == null)
@@ -30,8 +32,10 @@ function Like(props) {
 
 		if (liked === false) {
 			ids_l.push(props.id);
+			props.onIncrementCount();
 		} else {
-			ids_l = arrayRemove(ids_l, props.id)
+			ids_l = arrayRemove(ids_l, props.id);
+			props.onDecrementCount();
 		}
 
 		setLiked(!liked);
@@ -54,4 +58,24 @@ function Like(props) {
 	)
 }
 
-export default Like;
+function mapStateToProps(state) {
+	const { likesReducer } = state;
+	return {
+		likes: likesReducer.likes
+	}
+}
+
+function mapDispatchToProps(dispatch) {
+	return {
+		onIncrementCount: () => {
+			const action = { type: 'LIKES_INCREMENT' };
+			dispatch(action);
+		},
+		onDecrementCount: () => {
+			const action = { type: 'LIKES_DECREMENT' };
+			dispatch(action);
+		}
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Like);

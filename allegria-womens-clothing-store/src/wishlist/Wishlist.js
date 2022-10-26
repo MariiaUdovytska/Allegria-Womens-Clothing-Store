@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../css/wishlist/wishlist.css';
 import stockCards from '../data/stockCards.json';
 import WishlistCards from './WishlistCards';
+import { connect } from 'react-redux';
 
 function getIds() {
 	let idsArray = localStorage.getItem("idsWishlist");
@@ -28,6 +29,7 @@ function Wishlist(props) {
 		ids_l = arrayRemove(ids_l, id);
 		localStorage.setItem("idsWishlist", JSON.stringify(ids_l));
 		setIds(ids_l);
+		props.onDecrementCount();
 	}
 
 	for (let index = 0; index < ids.length; index++) {
@@ -51,4 +53,20 @@ function Wishlist(props) {
 	);
 }
 
-export default Wishlist;
+function mapStateToProps(state) {
+	const { likesReducer } = state;
+	return {
+		likes: likesReducer.likes
+	}
+}
+
+function mapDispatchToProps(dispatch) {
+	return {
+		onDecrementCount: () => {
+			const action = { type: 'LIKES_DECREMENT' };
+			dispatch(action);
+		}
+	}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Wishlist);
