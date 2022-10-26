@@ -148,6 +148,9 @@
 	font-size: 0.75rem;
 	padding: 1px 2px;
 }
+.count-busket{
+	bottom: -1px;
+}
 
 .menu__icons .bi-person::before,
 .menu__icons .bi-heart::before{
